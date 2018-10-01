@@ -41,6 +41,7 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
                 .inject(ComicListPresenterModule(this))
                 .inject(this)
 
+        presenter.onAttach(this)
         presenter.proofOfMvp("proof!")
     }
 
