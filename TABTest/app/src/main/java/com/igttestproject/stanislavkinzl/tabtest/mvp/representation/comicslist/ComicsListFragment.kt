@@ -3,6 +3,7 @@ package com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist
 import android.arch.lifecycle.ViewModelProviders
 import android.content.res.Configuration
 import android.os.Bundle
+import android.os.Parcelable
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
@@ -61,9 +62,20 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
     }
 
     private lateinit var rvComics: RecyclerView
+    private var recyclerState: Parcelable? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_comics_list, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        recyclerState = savedInstanceState?.getParcelable("lmState")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState?.putParcelable("lmState", rvComics.layoutManager?.onSaveInstanceState())
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -128,21 +140,20 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
     }
 
     private fun subscribeToList() {
-        val disposable = viewModel.comicsList
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(
+        viewModel.comicsList.observeOn(AndroidSchedulers.mainThread()).subscribe(
                         { list ->
                             adapter.comicsList = ArrayList(list)
                             adapter.notifyDataSetChanged()
                             progressBar.isActivated = false
                             progressBar.visibility = View.GONE
+                            if (recyclerState != null) {
+                                rvComics.layoutManager?.onRestoreInstanceState(recyclerState)
+                                recyclerState = null
+                            }
                         },
-                        { e ->
-                            Log.e("NGVL", "Error", e)
-                        }
-                )
+                        { e -> Log.e("NGVL", "Error", e) }
+        )
     }
-
 
     /**
      * Converting dp to pixel

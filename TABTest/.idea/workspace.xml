@@ -34,10 +34,11 @@
       <file leaf-file-name="ComicsListFragment.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/representation/comicslist/ComicsListFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2021">
-              <caret line="129" column="35" lean-forward="true" selection-start-line="129" selection-start-column="35" selection-end-line="129" selection-end-column="35" />
+            <state relative-caret-position="1557">
+              <caret line="75" column="56" lean-forward="false" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
               <folding>
-                <element signature="e#81#1690#0" expanded="true" />
+                <element signature="e#81#1719#0" expanded="true" />
+                <element signature="e#4376#4404#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -2437,15 +2438,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/representation/comicslist/model/ComicAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/Constants.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_comics_content.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/representation/comicslist/ComicsListFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/comic_card.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/representation/comicslist/ComicsListFragment.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="1883" />
+    <option name="x" value="1295" />
+    <option name="width" value="1452" />
     <option name="height" value="1835" />
   </component>
   <component name="ProjectView">
@@ -2847,7 +2847,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2212991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14803626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25078765" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3170,8 +3170,8 @@
         <state relative-caret-position="759">
           <caret line="47" column="64" lean-forward="false" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
           <folding>
-            <element signature="e#1320#1371#0" expanded="true" />
-            <element signature="e#1444#1477#0" expanded="true" />
+            <element signature="e#1320#1371#0" expanded="false" />
+            <element signature="e#1444#1477#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3253,7 +3253,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -3268,10 +3268,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/representation/comicslist/ComicsListFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2021">
-          <caret line="129" column="35" lean-forward="true" selection-start-line="129" selection-start-column="35" selection-end-line="129" selection-end-column="35" />
+        <state relative-caret-position="1557">
+          <caret line="75" column="56" lean-forward="false" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
           <folding>
-            <element signature="e#81#1690#0" expanded="true" />
+            <element signature="e#81#1719#0" expanded="true" />
+            <element signature="e#4376#4404#0" expanded="true" />
           </folding>
         </state>
       </provider>
