@@ -1,4 +1,4 @@
-package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database
+package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.local
 
 class DatabaseComicsRepository : IComicsRepository {
 
