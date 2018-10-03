@@ -4,6 +4,7 @@ import android.arch.lifecycle.ViewModel
 import android.arch.paging.PagedList
 import android.arch.paging.RxPagedListBuilder
 import br.com.nglauber.marvel.model.api.paging.ComicsDataSourceFactory
+import com.igttestproject.stanislavkinzl.tabtest.PAGE_SIZE
 
 import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.MarvelApi
 import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.entity.Comic
@@ -17,7 +18,7 @@ class ComicsViewModel : ViewModel() {
 
     private val compositeDisposable = CompositeDisposable()
 
-    private val pageSize = 20
+    private val pageSize = PAGE_SIZE
 
     private val sourceFactory: ComicsDataSourceFactory
 

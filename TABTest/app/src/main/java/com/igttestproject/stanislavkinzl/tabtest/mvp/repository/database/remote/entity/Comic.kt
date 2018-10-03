@@ -2,7 +2,7 @@ package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote
 
 data class Comic(
         val id: Int,
-        val name: String,
+        val title: String,
         val description: String,
         val thumbnail: Thumbnail
 )

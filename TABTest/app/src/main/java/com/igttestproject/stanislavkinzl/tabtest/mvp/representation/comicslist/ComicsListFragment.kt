@@ -1,48 +1,48 @@
 package com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist
 
+import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.igttestproject.stanislavkinzl.tabtest.App
-import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BaseFragment
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.ComicOld
-import es.dmoral.toasty.Toasty
 import com.igttestproject.stanislavkinzl.tabtest.R
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.ComicsAdapter
+import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BaseFragment
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.ComicAdapter
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.ComicsViewModel
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.di.ComicListPresenterModule
-import kotlinx.android.synthetic.main.fragment_comics_list.*
+import es.dmoral.toasty.Toasty
+import io.reactivex.android.schedulers.AndroidSchedulers
 import javax.inject.Inject
 
 
-
 class ComicsListFragment : BaseFragment(), ComicsListContract.View {
-    override fun initComicList(comicOldList: ArrayList<ComicOld>) {
-        adapter = ComicsAdapter(context!!, comicOldList)
-        gvComics.adapter = adapter
-        Log.d("APP", "ComicOld List Adapter Int")
-    }
+ /*   override fun initComicList(comicOldList: ArrayList<ComicOld>) {
+        /*   adapter = ComicsAdapter(context!!, comicOldList)
+           gvComics.adapter = adapter
+           Log.d("APP", "ComicOld List Adapter Int")*/
+    }*/
 
     override fun showProof(proof: String) {
         Toasty.success(this.requireContext(), proof, Toast.LENGTH_LONG).show()
         Log.d("PROOF", "PROOF!")
     }
 
-    override fun showComicList(comicOldList: ArrayList<ComicOld>) {
-        adapter.setComicList(comicOldList)
-        Log.d("APP", "ComicOld List Show")
-    }
+/*    override fun showComicList(comicOldList: ArrayList<ComicOld>) {
+        //    adapter.setComicList(comicOldList)
+        //    Log.d("APP", "ComicOld List Show")
+    }*/
+
+    private val adapter: ComicAdapter by lazy { ComicAdapter() }
+
+    private val viewModel: ComicsViewModel by lazy { ViewModelProviders.of(this).get(ComicsViewModel::class.java) }
 
     @Inject
     lateinit var presenter: ComicsListPresenter
-
-    private lateinit var adapter: ComicsAdapter
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun injectComponents() {
         (activity!!.application as App)
@@ -57,8 +57,10 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
         }
     }
 
+    private lateinit var rvComics: RecyclerView
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-          return inflater.inflate(R.layout.fragment_comics_list, container, false)
+        return inflater.inflate(R.layout.fragment_comics_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -68,7 +70,31 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
 
         presenter.attachView(this, context!!)
         presenter.proofOfMvp("proof!")
-        presenter.initComicList()
-        presenter.fetchComicList(true)
+        // presenter.initComicList()
+        //  presenter.fetchComicList(true)
+        rvComics = view.findViewById(R.id.rvComics)
+
+        val llm = LinearLayoutManager(context)
+        rvComics.layoutManager = llm
+        rvComics.adapter = adapter
+
+        subscribeToList()
+    }
+
+    private fun subscribeToList() {
+        val disposable = viewModel.comicsList
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(
+                        { list ->
+                            adapter.submitList(list)
+                            //        if (recyclerState != null) {
+                            //            rvComics.layoutManager?.onRestoreInstanceState(recyclerState)
+                            //            recyclerState = null
+                            //        }
+                        },
+                        { e ->
+                            Log.e("NGVL", "Error", e)
+                        }
+                )
     }
 }

@@ -4,12 +4,14 @@ import android.content.Context
 import android.util.Log
 import com.igttestproject.stanislavkinzl.tabtest.R.drawable.*
 import com.igttestproject.stanislavkinzl.tabtest.R.mipmap.ic_launcher
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.ComicOld
 
 class ComicsListPresenter : ComicsListContract.Presenter {
-    override fun initComicList() {
-        view.initComicList(ArrayList<ComicOld>())
+    override fun onDetach() {
+
     }
+    /* override fun initComicList() {
+         view.initComicList(ArrayList<ComicOld>())
+     }*/
 
     override fun attachView(view: ComicsListContract.View, context: Context) {
         this.view = view
@@ -21,10 +23,9 @@ class ComicsListPresenter : ComicsListContract.Presenter {
 
     override fun proofOfMvp(proof: String) {
         view.showProof(proof)
-        Log.d("It got here", "It got here")
     }
 
-    override fun fetchComicList(showLoading: Boolean) {
+   /* override fun fetchComicList(showLoading: Boolean) {
         var comicsList = ArrayList<ComicOld>()
 
         comicsList.add(ComicOld("Marvel", ic_launcher))
@@ -33,10 +34,5 @@ class ComicsListPresenter : ComicsListContract.Presenter {
         comicsList.add(ComicOld("Naruto", sample_0))
         comicsList.add(ComicOld("Hulk", sample_0))
 
-        view.showComicList(comicsList)
-    }
-
-    override fun onDetach() {
-    }
-
+        view.showComicList(comicsList)*/
 }
