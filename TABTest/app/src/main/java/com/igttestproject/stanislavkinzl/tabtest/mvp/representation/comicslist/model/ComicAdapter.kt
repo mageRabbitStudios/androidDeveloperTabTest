@@ -27,11 +27,15 @@ class ComicAdapter(
     }
 
     override fun onBindViewHolder(holder: VH, position: Int) {
-        val comic = comicsList.get(position)
+        val comic = comicsList[position]
         holder.txtName.text = comic.title
         holder.imgThumbnail.load("${comic.thumbnail.path}/standard_medium.${comic.thumbnail.extension}")
-        holder.txtCount.text = comic.pageCount.toString() + " pages"
-    }
+
+        when(comic.pageCount) {
+            0    -> holder.txtCount.text = context.getString(R.string.unknown_number_of_pages)
+            else -> holder.txtCount.text = comic.pageCount.toString() + context.getString(R.string.pages)
+        }
+}
 
     class VH(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgThumbnail = itemView.thumbnail
@@ -41,7 +45,7 @@ class ComicAdapter(
     }
 
     companion object {
-        val characterDiff = object: DiffUtil.ItemCallback<Comic>() {
+        val comicDiff = object: DiffUtil.ItemCallback<Comic>() {
             override fun areItemsTheSame(old: Comic, new: Comic): Boolean {
                 return old.id == new.id
             }

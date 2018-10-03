@@ -2,6 +2,7 @@ package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote
 
 import com.google.gson.GsonBuilder
 import com.igttestproject.stanislavkinzl.tabtest.API_KEY
+import com.igttestproject.stanislavkinzl.tabtest.COMICS_API_OFFSET
 import com.igttestproject.stanislavkinzl.tabtest.PRIVATE_KEY
 import com.igttestproject.stanislavkinzl.tabtest.extensions.md5
 import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.entity.Response
@@ -19,7 +20,7 @@ import java.util.*
 interface MarvelApi {
 
     @GET("comics")
-    fun allComics(@Query("offset") offset: Int? = 0): Observable<Response>
+    fun allComics(@Query("offset") offset: Int? = COMICS_API_OFFSET): Observable<Response>
 
     companion object {
         fun getService(): MarvelApi {

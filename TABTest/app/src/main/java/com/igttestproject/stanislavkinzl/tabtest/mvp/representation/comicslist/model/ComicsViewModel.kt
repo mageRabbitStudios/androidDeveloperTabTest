@@ -4,6 +4,7 @@ import android.arch.lifecycle.ViewModel
 import android.arch.paging.PagedList
 import android.arch.paging.RxPagedListBuilder
 import br.com.nglauber.marvel.model.api.paging.ComicsDataSourceFactory
+import com.igttestproject.stanislavkinzl.tabtest.COMICS_PREFETCH_DISTANCE
 import com.igttestproject.stanislavkinzl.tabtest.PAGE_SIZE
 
 import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.MarvelApi
@@ -28,7 +29,7 @@ class ComicsViewModel : ViewModel() {
         val config = PagedList.Config.Builder()
                 .setPageSize(pageSize)
                 .setInitialLoadSizeHint(pageSize * 2)
-                .setPrefetchDistance(10)
+                .setPrefetchDistance(COMICS_PREFETCH_DISTANCE)
                 .setEnablePlaceholders(false)
                 .build()
 
