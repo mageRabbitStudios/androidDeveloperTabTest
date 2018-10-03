@@ -40,6 +40,13 @@
                 android:background="#ffff"
                 />
 
+
+            <View android:background="#ffff"
+                  android:layout_height="@dimen/spacing_between_title_and_count"
+                  android:layout_width="match_parent"
+                  android:layout_below="@id/title"
+                />
+
             <TextView
                 android:id="@+id/count"
                 android:layout_width="match_parent"
@@ -52,6 +59,7 @@
                 android:textColor="@color/colorAccent"
                 android:background="#ffff"
                 android:gravity="bottom"
+                android:maxLines="1"
                 />
 
         </RelativeLayout>

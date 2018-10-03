@@ -19,4 +19,5 @@
     <dimen name="ic_comic_overflow_height">30dp</dimen>
     <dimen name="ic_comic_overflow_margin_top">10dp</dimen>
     <dimen name="recycler_view_padding">20dp</dimen>
+    <dimen name="spacing_between_title_and_count">12dp</dimen>
 </resources>
