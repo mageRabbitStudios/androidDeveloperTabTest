@@ -12,8 +12,9 @@ import android.widget.Toast
 import com.igttestproject.stanislavkinzl.tabtest.App
 import com.igttestproject.stanislavkinzl.tabtest.R
 import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BaseFragment
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.ComicAdapter
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.ComicsViewModel
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.entity.Comic
+import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicAdapter
+import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicsViewModel
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.di.ComicListPresenterModule
 import es.dmoral.toasty.Toasty
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -37,7 +38,7 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
         //    Log.d("APP", "ComicOld List Show")
     }*/
 
-    private val adapter: ComicAdapter by lazy { ComicAdapter() }
+    private lateinit var adapter: ComicAdapter
 
     private val viewModel: ComicsViewModel by lazy { ViewModelProviders.of(this).get(ComicsViewModel::class.java) }
 
@@ -68,10 +69,15 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
 
         injectComponents()
 
+        val emptyList: ArrayList<Comic> = ArrayList<Comic>()
+        adapter = ComicAdapter(context!!, emptyList)
+
         presenter.attachView(this, context!!)
         presenter.proofOfMvp("proof!")
         // presenter.initComicList()
         //  presenter.fetchComicList(true)
+
+
         rvComics = view.findViewById(R.id.rvComics)
 
         val llm = LinearLayoutManager(context)
@@ -86,7 +92,8 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(
                         { list ->
-                            adapter.submitList(list)
+                            adapter.comicsList = ArrayList(list)
+                            adapter.notifyDataSetChanged()
                             //        if (recyclerState != null) {
                             //            rvComics.layoutManager?.onRestoreInstanceState(recyclerState)
                             //            recyclerState = null

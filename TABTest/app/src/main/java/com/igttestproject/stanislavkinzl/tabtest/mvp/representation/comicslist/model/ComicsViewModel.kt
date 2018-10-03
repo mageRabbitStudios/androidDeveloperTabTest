@@ -1,4 +1,4 @@
-package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model
+package com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model
 
 import android.arch.lifecycle.ViewModel
 import android.arch.paging.PagedList
