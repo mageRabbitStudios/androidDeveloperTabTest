@@ -4,11 +4,11 @@ import android.content.Context
 import android.util.Log
 import com.igttestproject.stanislavkinzl.tabtest.R.drawable.*
 import com.igttestproject.stanislavkinzl.tabtest.R.mipmap.ic_launcher
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.Comic
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.ComicOld
 
 class ComicsListPresenter : ComicsListContract.Presenter {
     override fun initComicList() {
-        view.initComicList(ArrayList<Comic>())
+        view.initComicList(ArrayList<ComicOld>())
     }
 
     override fun attachView(view: ComicsListContract.View, context: Context) {
@@ -25,13 +25,13 @@ class ComicsListPresenter : ComicsListContract.Presenter {
     }
 
     override fun fetchComicList(showLoading: Boolean) {
-        var comicsList = ArrayList<Comic>()
+        var comicsList = ArrayList<ComicOld>()
 
-        comicsList.add(Comic("Marvel", ic_launcher))
-        comicsList.add(Comic("Spiderman",ic_launcher))
-        comicsList.add(Comic("Bortuto", sample_0))
-        comicsList.add(Comic("Naruto", sample_0))
-        comicsList.add(Comic("Hulk", sample_0))
+        comicsList.add(ComicOld("Marvel", ic_launcher))
+        comicsList.add(ComicOld("Spiderman",ic_launcher))
+        comicsList.add(ComicOld("Bortuto", sample_0))
+        comicsList.add(ComicOld("Naruto", sample_0))
+        comicsList.add(ComicOld("Hulk", sample_0))
 
         view.showComicList(comicsList)
     }

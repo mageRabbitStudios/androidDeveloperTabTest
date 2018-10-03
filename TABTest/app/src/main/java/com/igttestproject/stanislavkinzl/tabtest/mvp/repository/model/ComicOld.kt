@@ -2,7 +2,7 @@ package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model
 
 import com.google.gson.annotations.SerializedName
 
-class Comic {
+class ComicOld {
 
     @SerializedName("title ")
     var name: String? = null

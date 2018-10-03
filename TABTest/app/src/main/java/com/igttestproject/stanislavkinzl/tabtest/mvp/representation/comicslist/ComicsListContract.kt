@@ -1,6 +1,6 @@
 package com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist
 
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.Comic
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.model.ComicOld
 import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BasePresenter
 import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BaseView
 
@@ -15,8 +15,8 @@ interface ComicsListContract {
     }
 
     interface View : BaseView {
-        fun initComicList(comicList: ArrayList<Comic>)
-        fun showComicList(comicList: ArrayList<Comic>)
+        fun initComicList(comicOldList: ArrayList<ComicOld>)
+        fun showComicList(comicOldList: ArrayList<ComicOld>)
         fun showProof(proof: String)
     }
 }

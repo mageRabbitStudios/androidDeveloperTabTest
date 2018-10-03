@@ -11,15 +11,15 @@ import kotlinx.android.synthetic.main.comic_item.view.*
 
 class ComicsAdapter : BaseAdapter {
 
-    var comicsList = ArrayList<Comic>()
+    var comicsList = ArrayList<ComicOld>()
     var context: Context? = null
 
-    constructor(context: Context, comicsList: ArrayList<Comic>) : super() {
+    constructor(context: Context, comicsList: ArrayList<ComicOld>) : super() {
         this.context = context
         this.comicsList = comicsList
     }
 
-    fun setComicList(comicsList: ArrayList<Comic>) {
+    fun setComicList(comicsList: ArrayList<ComicOld>) {
         this.comicsList = comicsList
         notifyDataSetChanged()
     }
