@@ -8,14 +8,15 @@ interface ComicsListContract {
 
     interface Presenter : BasePresenter<View> {
 
-        fun refreshComicList()
         fun fetchComicList(showLoading: Boolean)
+        fun initComicList()
         fun proofOfMvp(proof: String)
 
     }
 
     interface View : BaseView {
-        fun showComicList(comicList: List<Comic>)
+        fun initComicList(comicList: ArrayList<Comic>)
+        fun showComicList(comicList: ArrayList<Comic>)
         fun showProof(proof: String)
     }
 }

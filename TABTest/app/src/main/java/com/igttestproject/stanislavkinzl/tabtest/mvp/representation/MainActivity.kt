@@ -14,7 +14,5 @@ class MainActivity : AppCompatActivity() {
         var manager = supportFragmentManager
         var fragment = ComicsListFragment()
         manager.beginTransaction().replace(R.id.container,fragment).commit()
-
-
     }
 }

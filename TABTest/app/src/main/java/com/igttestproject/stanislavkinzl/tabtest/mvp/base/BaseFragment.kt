@@ -12,4 +12,6 @@ open class BaseFragment : Fragment() {
                 .addToBackStack(null)
                 .commit()
     }
+
+    open fun injectComponents() {}
 }
