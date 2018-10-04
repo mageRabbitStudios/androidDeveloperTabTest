@@ -7,3 +7,9 @@ files safe.
 
 Also I'll add different files like images, blueprints and so to this 
 repository also.
+
+architecture:
+[![sample](https://imgur.com/a/XBYw9l1)
+
+screenshot:
+[![sample](https://imgur.com/a/TxuAHdQ)
