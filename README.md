@@ -14,4 +14,4 @@ architecture:
 ![Architecture]([Imgur](https://i.imgur.com/8hxAbuO.jpg))
 
 screenshot:
-[![sample](https://imgur.com/a/TxuAHdQ)]
+[![sample](https://i.imgur.com/8hxAbuO.jpg)]
