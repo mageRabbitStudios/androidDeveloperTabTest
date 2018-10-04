@@ -8,10 +8,8 @@ files safe.
 Also I'll add different files like images, blueprints and so to this 
 repository also.
 
-architecture:
-[![sample](https://imgur.com/a/XBYw9l1)]
-#+html: <p align="center"><img src="https://imgur.com/a/XBYw9l1" /></p>
-![Architecture]([Imgur](https://i.imgur.com/8hxAbuO.jpg))
-
 screenshot:
+[![sample](https://i.imgur.com/NxIUP8N.png)]
+
+architecture:
 [![sample](https://i.imgur.com/8hxAbuO.jpg)]
