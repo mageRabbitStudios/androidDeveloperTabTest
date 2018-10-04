@@ -11,6 +11,7 @@ repository also.
 architecture:
 [![sample](https://imgur.com/a/XBYw9l1)]
 #+html: <p align="center"><img src="https://imgur.com/a/XBYw9l1" /></p>
+![Architecture](https://imgur.com/a/XBYw9l1)
 
 screenshot:
 [![sample](https://imgur.com/a/TxuAHdQ)]
