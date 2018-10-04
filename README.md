@@ -10,6 +10,7 @@ repository also.
 
 architecture:
 [![sample](https://imgur.com/a/XBYw9l1)]
+#+html: <p align="center"><img src="https://imgur.com/a/XBYw9l1" /></p>
 
 screenshot:
 [![sample](https://imgur.com/a/TxuAHdQ)]
