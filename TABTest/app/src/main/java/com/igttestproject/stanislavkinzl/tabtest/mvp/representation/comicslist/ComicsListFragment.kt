@@ -15,7 +15,7 @@ import android.widget.ProgressBar
 import com.igttestproject.stanislavkinzl.tabtest.App
 import com.igttestproject.stanislavkinzl.tabtest.R
 import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BaseFragment
-import com.igttestproject.stanislavkianzl.tabtest.mvp.representation.comicslist.di.ComicListPresenterModule
+import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.di.ComicListPresenterModule
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicAdapter
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicsViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
