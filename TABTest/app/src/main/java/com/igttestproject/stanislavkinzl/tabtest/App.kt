@@ -11,11 +11,10 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-
         buildAppComponent()
 
         // init realm
-      //  RealmHelper.init(this)
+        //  RealmHelper.init(this)
     }
 
     private fun buildAppComponent() {
