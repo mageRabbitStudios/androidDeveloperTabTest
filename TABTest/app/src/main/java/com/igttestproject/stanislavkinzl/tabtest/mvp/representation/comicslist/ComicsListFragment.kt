@@ -1,5 +1,6 @@
 package com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist
 
+import android.annotation.SuppressLint
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.os.Parcelable
@@ -14,12 +15,11 @@ import android.widget.ProgressBar
 import com.igttestproject.stanislavkinzl.tabtest.App
 import com.igttestproject.stanislavkinzl.tabtest.R
 import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BaseFragment
-import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.di.ComicListPresenterModule
+import com.igttestproject.stanislavkianzl.tabtest.mvp.representation.comicslist.di.ComicListPresenterModule
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicAdapter
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicsViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import javax.inject.Inject
-
 
 class ComicsListFragment : BaseFragment(), ComicsListContract.View {
 
@@ -80,6 +80,7 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
         presenter.loadComics(view)
     }
 
+    @SuppressLint("CheckResult")
     private fun subscribeToList() {
         viewModel.comicsList.observeOn(AndroidSchedulers.mainThread()).subscribe(
                 { list ->
