@@ -12,5 +12,7 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class Comic(
         var name: String,
-        var url: String
+        var url: String,
+        var extenson: String,
+        var pageCount: Int
 ) : Parcelable

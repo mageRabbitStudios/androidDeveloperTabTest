@@ -5,13 +5,19 @@ import android.arch.paging.PagedList
 import android.arch.paging.RxPagedListBuilder
 import com.igttestproject.stanislavkinzl.tabtest.COMICS_PREFETCH_DISTANCE
 import com.igttestproject.stanislavkinzl.tabtest.PAGE_SIZE
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.ComicRepository
 
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.entity.Comic
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.Comic
 import io.reactivex.Observable
+import io.reactivex.Single
 import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
+import javax.inject.Inject
 
-class ComicsViewModel : ViewModel() {
+class ComicsViewModel @Inject constructor(
+        comicsRepository: ComicRepository
+) : ViewModel() {
 
    // var comicsList: Observable<PagedList<Comic>>
 
@@ -19,12 +25,14 @@ class ComicsViewModel : ViewModel() {
 
     private val pageSize = PAGE_SIZE
 
-    private val sourceFactory: ComicsDataSourceFactory
+//    private val sourceFactory: ComicsDataSourceFactory
 
-    var comicsList: Observable<PagedList<Comic>>
+
+    var comicsList: Single<List<Comic>> = comicsRepository.getComics()
+    private var disposable: Disposable? = null
 
     init {
-        sourceFactory = ComicsDataSourceFactory(compositeDisposable)
+        /*      sourceFactory = ComicsDataSourceFactory(compositeDisposable)
 
         val config = PagedList.Config.Builder()
                 .setPageSize(pageSize)
@@ -36,7 +44,7 @@ class ComicsViewModel : ViewModel() {
         comicsList = RxPagedListBuilder(sourceFactory, config)
                 .setFetchScheduler(Schedulers.io())
                 .buildObservable()
-                .cache()
+                .cache()*/
     }
 
     override fun onCleared() {

@@ -1,5 +1,6 @@
 package com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist
 
+import android.annotation.SuppressLint
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.os.Parcelable
@@ -80,6 +81,7 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
         presenter.loadComics(view)
     }
 
+    @SuppressLint("CheckResult")
     private fun subscribeToList() {
         viewModel.comicsList.observeOn(AndroidSchedulers.mainThread()).subscribe(
                 { list ->

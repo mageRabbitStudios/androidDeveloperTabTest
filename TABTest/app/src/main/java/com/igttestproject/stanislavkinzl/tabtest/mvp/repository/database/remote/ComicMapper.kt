@@ -1,5 +1,4 @@
 package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote
-
 import javax.inject.Inject
 
 class ComicMapper @Inject constructor() {
@@ -10,16 +9,18 @@ class ComicMapper @Inject constructor() {
      */
 
     fun map(comicsResponse: GetComicsResponse): List<Comic> =
-            comicsResponse.data?.comics?.mapNotNull(::MapOrNull) ?: ArrayList()
+            comicsResponse.data?.comics?.mapNotNull(::mapOrNull) ?: ArrayList()
 
-    private fun MapOrNull(comicItem: ComicItem): Comic? {
+    private fun mapOrNull(comicItem: ComicItem): Comic? {
         if (comicItem.thumbnail!!.path == null) {
             return null
         }
 
         return Comic(
-                name = comicItem.name ?: "",
-                url  = comicItem.thumbnail.path!!
+                name =       comicItem.name ?: "",
+                url  =       comicItem.thumbnail.path!!,
+                extenson =   comicItem.thumbnail.extension ?: "",
+                pageCount =  comicItem.pageCount ?: 0
         )
     }
 }

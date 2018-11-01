@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.igttestproject.stanislavkinzl.tabtest.R
 import com.igttestproject.stanislavkinzl.tabtest.extensions.load
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.entity.Comic
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.Comic
 import kotlinx.android.synthetic.main.comic_card.view.*
 
 class ComicAdapter(
@@ -28,8 +28,8 @@ class ComicAdapter(
 
     override fun onBindViewHolder(holder: VH, position: Int) {
         val comic = comicsList[position]
-        holder.txtName.text = comic.title
-        holder.imgThumbnail.load("${comic.thumbnail.path}/standard_medium.${comic.thumbnail.extension}")
+        holder.txtName.text = comic.name
+        holder.imgThumbnail.load("${comic.url}/standard_medium.${comic.extenson}")
 
         when(comic.pageCount) {
             0    -> holder.txtCount.text = context.getString(R.string.unknown_number_of_pages)
@@ -44,7 +44,7 @@ class ComicAdapter(
        // val overflow = itemView.overflow
     }
 
-    companion object {
+    /*companion object {
         val comicDiff = object: DiffUtil.ItemCallback<Comic>() {
             override fun areItemsTheSame(old: Comic, new: Comic): Boolean {
                 return old.id == new.id
@@ -55,5 +55,5 @@ class ComicAdapter(
             }
 
         }
-    }
+    }*/
 }

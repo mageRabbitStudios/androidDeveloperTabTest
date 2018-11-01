@@ -1,20 +1,7 @@
 package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote
 
-import com.google.gson.GsonBuilder
-import com.igttestproject.stanislavkinzl.tabtest.API_KEY
-import com.igttestproject.stanislavkinzl.tabtest.COMICS_API_OFFSET
-import com.igttestproject.stanislavkinzl.tabtest.PRIVATE_KEY
-import com.igttestproject.stanislavkinzl.tabtest.extensions.md5
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.entity.Response
-import io.reactivex.Observable
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
-import retrofit2.converter.gson.GsonConverterFactory
+import io.reactivex.Single
 import retrofit2.http.GET
-import retrofit2.http.Query
-import java.util.*
 
 
 interface ApiInterface {
@@ -22,7 +9,8 @@ interface ApiInterface {
     @GET(Endpoints.GET_COMICS)
     fun allComics(
             //@Query("offset") offset: Int? = COMICS_API_OFFSET
-    ): Observable<Response>
+    ): Single<GetComicsResponse>
+    // fun allComics(): Single<GetComicsResponse>
 
     object Endpoints {
         const val GET_COMICS = "comics"
