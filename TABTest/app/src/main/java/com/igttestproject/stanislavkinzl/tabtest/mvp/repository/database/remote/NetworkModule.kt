@@ -32,8 +32,7 @@ class NetworkModule {
                     .client(okHttpClient)
                     .build()
 
-    @Provides
-    fun provideBaseUrl(): String {
+    @Provides fun provideBaseUrl(): String {
         return "test"
     }
 
