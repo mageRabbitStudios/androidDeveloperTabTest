@@ -34,7 +34,7 @@ class ComicsDataSource(
                                  initialCallback: LoadInitialCallback<Int, Comic>?,
                                  callback: LoadCallback<Int, Comic>?) {
         compositeDisposable.add(
-                marvelApi.allComics(requestedPage * requestedLoadSize)
+                marvelApi.allComics()//requestedPage * requestedLoadSize)
                         .subscribe(
                                 { response ->
                                     Log.d("NGVL", "Loading page: $requestedPage")
@@ -45,6 +45,6 @@ class ComicsDataSource(
                                     Log.d("NGVL", "Error loading page: $requestedPage", t)
                                 }
                         )
-        );
+        )
     }
 }

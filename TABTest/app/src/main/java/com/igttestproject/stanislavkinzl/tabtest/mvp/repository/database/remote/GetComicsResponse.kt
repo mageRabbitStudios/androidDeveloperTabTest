@@ -2,6 +2,11 @@ package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote
 
 import com.google.gson.annotations.SerializedName
 
+/***
+ * Model class coming from the network so everything is marked as nullable or has default values.
+ * Needs to be sanity checked (any mandatory fields) and mapped to the model we want to use internally.
+ *
+ */
 data class GetComicsResponse(
     @SerializedName("data")         val data: Data?
 )

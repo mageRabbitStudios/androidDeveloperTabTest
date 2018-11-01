@@ -20,7 +20,9 @@ import java.util.*
 interface MarvelApi {
 
     @GET("comics")
-    fun allComics(@Query("offset") offset: Int? = COMICS_API_OFFSET): Observable<Response>
+    fun allComics(
+            //@Query("offset") offset: Int? = COMICS_API_OFFSET
+    ): Observable<Response>
 
     companion object {
         fun getService(): MarvelApi {
