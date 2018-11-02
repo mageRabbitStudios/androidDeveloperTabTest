@@ -1,15 +1,17 @@
 package com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote
 
 import io.reactivex.Single
+import retrofit2.Call
 import retrofit2.http.GET
 
 
 interface ApiInterface {
 
     @GET(Endpoints.GET_COMICS)
-    fun allComics(
+    fun allComics(): Call<GetComicsResponse>
+    /* fun allComics(
             //@Query("offset") offset: Int? = COMICS_API_OFFSET
-    ): Single<GetComicsResponse>
+    ): Single<GetComicsResponse>*/
     // fun allComics(): Single<GetComicsResponse>
 
     object Endpoints {

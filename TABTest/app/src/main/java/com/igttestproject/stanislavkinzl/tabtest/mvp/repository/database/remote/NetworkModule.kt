@@ -14,7 +14,7 @@ import java.util.*
 
 @Module
 class NetworkModule {
-
+/*
     @Provides
     fun provideMarvelApi(retrofit: Retrofit): ApiInterface =
             retrofit.create(ApiInterface::class.java)
@@ -55,7 +55,7 @@ class NetworkModule {
 
     @Provides
     fun provideHttpLoggingInterceptor(): HttpLoggingInterceptor =
-            HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+            HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)*/
 
 
     /*

@@ -4,7 +4,7 @@ import io.reactivex.Single
 import javax.inject.Inject
 
 interface ComicRepository {
-    fun getComics(): Single<List<Comic>>
+    //fun getComics(): Single<List<Comic>>
 }
 
 class ComicRepositoryImpl @Inject constructor(
@@ -13,5 +13,5 @@ class ComicRepositoryImpl @Inject constructor(
 ) : ComicRepository {
 
     // override fun getComics(): Single<List<Comic>> = apiInterface.allComics().map(mapper::map)
-    override fun getComics(): Single<List<Comic>> = apiInterface.allComics().map(mapper::map)
+   // override fun getComics(): Single<List<Comic>> = apiInterface.allComics().map(mapper::map)
 }

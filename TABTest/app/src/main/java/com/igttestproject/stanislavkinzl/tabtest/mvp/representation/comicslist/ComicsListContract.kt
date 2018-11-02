@@ -5,6 +5,7 @@ import android.support.v7.widget.Toolbar
 import android.view.View
 import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BasePresenter
 import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BaseView
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.Comic
 
 interface ComicsListContract {
 
@@ -16,5 +17,6 @@ interface ComicsListContract {
 
     interface View : BaseView {
         fun displayToolbar(toolbar: Toolbar)
+        fun onMemesFetched(comicsList: List<Comic>)
     }
 }

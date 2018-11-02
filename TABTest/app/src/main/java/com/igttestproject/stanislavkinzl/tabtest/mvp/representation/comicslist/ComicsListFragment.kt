@@ -15,6 +15,7 @@ import android.widget.ProgressBar
 import com.igttestproject.stanislavkinzl.tabtest.App
 import com.igttestproject.stanislavkinzl.tabtest.R
 import com.igttestproject.stanislavkinzl.tabtest.mvp.base.BaseFragment
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.Comic
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.di.ComicListPresenterModule
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicAdapter
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicsViewModel
@@ -23,6 +24,16 @@ import javax.inject.Inject
 
 
 class ComicsListFragment : BaseFragment(), ComicsListContract.View {
+    override fun onMemesFetched(comicsList: List<Comic>) {
+        adapter.comicsList = ArrayList(comicsList)
+        adapter.notifyDataSetChanged()
+        progressBar.isActivated = false
+        progressBar.visibility = View.GONE
+        if (recyclerState != null) {
+            rvComics.layoutManager?.onRestoreInstanceState(recyclerState)
+            recyclerState = null
+        }
+    }
 
     override fun displayToolbar(toolbar: Toolbar) {
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
@@ -76,12 +87,14 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
         //setting adapter
         adapter = ComicAdapter(context!!, ArrayList())
         this.rvComics.adapter = adapter
-        subscribeToList()
+
+        presenter.fetchComics(view)
+       // subscribeToList()
     }
 
     @SuppressLint("CheckResult")
     private fun subscribeToList() {
-        viewModel.comicsList.observeOn(AndroidSchedulers.mainThread()).subscribe(
+     /*   presenter.comicsList.observeOn(AndroidSchedulers.mainThread()).subscribe(
                 { list ->
                     //this is where the loading into the adapter happens
                     adapter.comicsList = ArrayList(list)
@@ -94,6 +107,6 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
                     }
                 },
                 { e -> Log.e("NGVL", "Error", e) }
-        )
+        )*/
     }
 }
