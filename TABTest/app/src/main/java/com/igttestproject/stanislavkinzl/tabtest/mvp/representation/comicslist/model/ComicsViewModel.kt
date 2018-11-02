@@ -33,6 +33,7 @@ class ComicsViewModel : ViewModel() {
 
     init {
         comicsList = Single.just(emptyList())
+
         //Comic("papa", "kaka", "jojo", 12)))
         /*      sourceFactory = ComicsDataSourceFactory(compositeDisposable)
 

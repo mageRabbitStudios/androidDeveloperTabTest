@@ -24,13 +24,6 @@ import javax.inject.Inject
 
 class ComicsListFragment : BaseFragment(), ComicsListContract.View {
 
-    override fun displayComics(recyclerView: RecyclerView) {
-        this.rvComics = recyclerView
-        adapter = ComicAdapter(context!!, ArrayList())
-        this.rvComics.adapter = adapter
-        subscribeToList()
-    }
-
     override fun displayToolbar(toolbar: Toolbar) {
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
     }
@@ -78,7 +71,12 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
         //presenter
         presenter.attachView(this, context!!)
         presenter.setUpToolbar(view)
-        presenter.loadComics(view)
+        rvComics = presenter.initRecyclerView(view)
+
+        //setting adapter
+        adapter = ComicAdapter(context!!, ArrayList())
+        this.rvComics.adapter = adapter
+        subscribeToList()
     }
 
     @SuppressLint("CheckResult")

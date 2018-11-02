@@ -16,8 +16,11 @@ import com.igttestproject.stanislavkinzl.tabtest.R
 import com.igttestproject.stanislavkinzl.tabtest.common.GridSpacingItemDecoration
 
 class ComicsListPresenter : ComicsListContract.Presenter {
+    override fun fetchComics(view: View) {
 
-    override fun loadComics(view: View) {
+    }
+
+    override fun initRecyclerView(view: View) : RecyclerView {
 
         val recyclerView: RecyclerView = view.findViewById(R.id.rvComics)
 
@@ -32,7 +35,9 @@ class ComicsListPresenter : ComicsListContract.Presenter {
         recyclerView.addItemDecoration(GridSpacingItemDecoration(spanCount, dpToPx(10), true))
         recyclerView.itemAnimator = DefaultItemAnimator()
 
-        this.view.displayComics(recyclerView)
+        return recyclerView
+        // this.view.displayComics(recyclerView)
+
     }
 
     override fun setUpToolbar(view: View) {
