@@ -5,21 +5,20 @@ import android.content.Context
 import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.NetworkModule
 import dagger.Module
 import dagger.Provides
-import javax.inject.Singleton
 
 @Module(includes = [NetworkModule::class])
-class AppModule(private val app: Application) {
+class AppModule {
 
-    @Provides
-    @Singleton
-    internal fun provideApplication(): Application {
-        return app
-    }
+//    @Provides
+//    @Singleton
+//    internal fun provideApplication(): Application {
+//        return app
+//    }
 
-    @Singleton
+    //    @Singleton
     @Provides
-    internal fun provideContext(): Context {
-        return app.applicationContext
+    internal fun provideContext(application: Application): Context {
+        return application
     }
 
 }

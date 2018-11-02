@@ -1,11 +1,17 @@
 package com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.di
 
+import android.arch.lifecycle.ViewModelProviders
 import com.igttestproject.stanislavkinzl.tabtest.API_KEY
 import com.igttestproject.stanislavkinzl.tabtest.PRIVATE_KEY
 import com.igttestproject.stanislavkinzl.tabtest.extensions.md5
 import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.ApiInterface
-import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.ComicsListContract
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.ComicRepository
+import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.ComicRepositoryImpl
+import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.MainActivity
+import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.ComicsListFragment
 import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.ComicsListPresenter
+import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicsViewModel
+import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.model.ComicsViewModelFactory
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -19,10 +25,29 @@ import java.util.*
 @Module
 class ComicListPresenterModule {
 
+
+    //============= MVVM/MVP =================
+
+
     @Provides
-    fun provideComicsListPresenter(apiInterface: ApiInterface): ComicsListPresenter {
-        return ComicsListPresenter(apiInterface)
+    fun provideComicsViewModel(mainActivity: MainActivity, memeViewModelFactory: ComicsViewModelFactory): ComicsViewModel =
+            ViewModelProviders.of(mainActivity, memeViewModelFactory).get(ComicsViewModel::class.java)
+
+
+    @Provides
+    fun provideComicFragment(): ComicsListFragment =
+            ComicsListFragment()
+
+    @Provides
+    fun provideComicRepository(comicRepository: ComicRepositoryImpl): ComicRepository =
+            comicRepository
+
+    @Provides
+    fun provideComicsListPresenter(): ComicsListPresenter {
+        return ComicsListPresenter()
     }
+
+    //============= RETROFIT ==============
 
     @Provides
     fun provideMarvelApi(retrofit: Retrofit): ApiInterface =

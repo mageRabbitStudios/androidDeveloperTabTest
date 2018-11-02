@@ -1,29 +1,25 @@
 package com.igttestproject.stanislavkinzl.tabtest
 
+import android.app.Activity
 import android.app.Application
-import com.igttestproject.stanislavkinzl.tabtest.dependencyinjection.AppComponent
-import com.igttestproject.stanislavkinzl.tabtest.dependencyinjection.AppModule
 import com.igttestproject.stanislavkinzl.tabtest.dependencyinjection.DaggerAppComponent
+import dagger.android.AndroidInjector
+import dagger.android.DispatchingAndroidInjector
+import dagger.android.HasActivityInjector
+import javax.inject.Inject
 
-class App : Application() {
+class App : Application(), HasActivityInjector {
 
-    private var appComponent: AppComponent? = null
+    @Inject
+    lateinit var activityDispatchingAndroidInjector: DispatchingAndroidInjector<Activity>
 
     override fun onCreate() {
         super.onCreate()
-        buildAppComponent()
-
-        // init realm
-        //  RealmHelper.init(this)
+        DaggerAppComponent.builder().application(this).build().inject(this)
     }
 
-    private fun buildAppComponent() {
-        appComponent = DaggerAppComponent.builder()
-                .appModule(AppModule(this))
-                .build()
-    }
 
-    fun getAppComponent(): AppComponent? {
-        return appComponent
+    override fun activityInjector(): AndroidInjector<Activity> {
+        return activityDispatchingAndroidInjector
     }
 }

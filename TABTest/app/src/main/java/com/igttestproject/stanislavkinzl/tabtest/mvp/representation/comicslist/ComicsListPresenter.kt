@@ -8,53 +8,19 @@ import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
-import android.util.Log
 import android.util.TypedValue
 import android.view.View
 import com.igttestproject.stanislavkinzl.tabtest.NUMBER_OF_COMICS_PER_ROW_LANDSCAPE
 import com.igttestproject.stanislavkinzl.tabtest.NUMBER_OF_COMICS_PER_ROW_PORTRAIT
 import com.igttestproject.stanislavkinzl.tabtest.R
 import com.igttestproject.stanislavkinzl.tabtest.common.GridSpacingItemDecoration
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.ApiInterface
 import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.Comic
-import javax.inject.Inject
 
-import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.GetComicsResponse
+class ComicsListPresenter: ComicsListContract.Presenter {
 
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-
-class ComicsListPresenter @Inject constructor(
-        private val apiInterface: ApiInterface
-) : ComicsListContract.Presenter {
-
-   // val comicsList: Single<List<Comic>>
 
     override fun fetchComics(view: View) {
-        val call = apiInterface.allComics()
-
-        Log.e("TAG", "Fetch Meme Call Executed")
-        call.enqueue(object : Callback<GetComicsResponse> {
-            override fun onResponse(call: Call<GetComicsResponse>, response: Response<GetComicsResponse>) {
-                Log.e("TAG", "On Response")
-
-                val memes = response.body()!!.data
-                val memeList = memes!!.comics
-                val memeArrayList = emptyList<Comic>()
-
-                for (meme in memeList!!) {
-                    memeArrayList.plus(meme)
-                }
-                onMemesFetched(memeArrayList)
-            }
-
-            override fun onFailure(call: Call<GetComicsResponse>, t: Throwable) {
-                Log.e("TAG", "Request failed")
-
-            }
-        })
-
+        //comicRepository.fetchComics()
     }
 
     private fun onMemesFetched(memeArrayList: List<Comic>) {

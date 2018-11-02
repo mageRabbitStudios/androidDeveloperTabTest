@@ -1,13 +1,23 @@
 package com.igttestproject.stanislavkinzl.tabtest.dependencyinjection
 
-import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.di.ComicListComponent
-import com.igttestproject.stanislavkinzl.tabtest.mvp.representation.comicslist.di.ComicListPresenterModule
+import android.app.Application
+import com.igttestproject.stanislavkinzl.tabtest.App
+import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
 
 //what kind of modules to use
-@Component(modules = [AppModule::class, AndroidSupportInjectionModule::class]) interface AppComponent {
+@Component(modules = [AppModule::class, AndroidSupportInjectionModule::class, ActivityBindings::class])
+interface AppComponent {
+
+    @Component.Builder
+    interface Builder {
+        @BindsInstance
+        fun application(application: Application): Builder
+
+        fun build(): AppComponent
+    }
 
     //what VIEWS to inject
-    fun inject(module: ComicListPresenterModule): ComicListComponent
+    fun inject(app: App)
 }
