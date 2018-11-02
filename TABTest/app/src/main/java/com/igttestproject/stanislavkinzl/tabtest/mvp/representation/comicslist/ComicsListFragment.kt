@@ -39,7 +39,7 @@ class ComicsListFragment : BaseFragment(), ComicsListContract.View {
     override fun injectComponents() {
         (activity!!.application as App)
                 .getAppComponent()!!
-                .inject(ComicListPresenterModule(this))
+                .inject(ComicListPresenterModule())
                 .inject(this)
     }
 

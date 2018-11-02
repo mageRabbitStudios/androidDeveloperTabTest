@@ -7,18 +7,7 @@ import dagger.Provides
 
 
 @Module
-class ComicListPresenterModule(private val contract: ComicsListContract.View) {
-
-    private var view: ComicsListContract.View? = null
-
-    @Provides
-    internal fun provideView(): ComicsListContract.View {
-        return contract
-    }
-
-    init {
-        this.view = contract
-    }
+class ComicListPresenterModule {
 
     @Provides
     fun provideComicsListPresenter(): ComicsListPresenter {
