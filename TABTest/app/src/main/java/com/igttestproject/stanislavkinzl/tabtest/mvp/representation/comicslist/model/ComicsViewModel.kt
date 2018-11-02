@@ -10,14 +10,13 @@ import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.
 import com.igttestproject.stanislavkinzl.tabtest.mvp.repository.database.remote.Comic
 import io.reactivex.Observable
 import io.reactivex.Single
+import io.reactivex.Single.just
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
-class ComicsViewModel @Inject constructor(
-        comicsRepository: ComicRepository
-) : ViewModel() {
+class ComicsViewModel : ViewModel() {
 
    // var comicsList: Observable<PagedList<Comic>>
 
@@ -28,10 +27,13 @@ class ComicsViewModel @Inject constructor(
 //    private val sourceFactory: ComicsDataSourceFactory
 
 
-    var comicsList: Single<List<Comic>> = comicsRepository.getComics()
-    private var disposable: Disposable? = null
+    val comicsList: Single<List<Comic>>
+            //= comicsRepository.getComics()
+    //private var disposable: Disposable? = null
 
     init {
+        comicsList = Single.just(emptyList())
+        //Comic("papa", "kaka", "jojo", 12)))
         /*      sourceFactory = ComicsDataSourceFactory(compositeDisposable)
 
         val config = PagedList.Config.Builder()
