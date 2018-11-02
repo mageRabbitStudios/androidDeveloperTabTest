@@ -9,9 +9,4 @@ class ComicsViewModelImpl constructor(
     override fun fetchComicsList() {
         comicRepository.fetchComics()
     }
-
-    /* fun getMemeLiveData(): LiveData<ArrayList<Comic>> {
-         return comicRepository.gtComicListData()
-     }*/
-
 }
