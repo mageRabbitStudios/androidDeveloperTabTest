@@ -18,6 +18,5 @@ interface AppComponent {
         fun build(): AppComponent
     }
 
-    //what VIEWS to inject
     fun inject(app: App)
 }
