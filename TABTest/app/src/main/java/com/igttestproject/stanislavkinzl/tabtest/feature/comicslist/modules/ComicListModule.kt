@@ -1,11 +1,13 @@
 package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.modules
 
 import android.arch.lifecycle.ViewModelProviders
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.domain.FetchComicsUseCase
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.domain.FetchComicsUseCaseImpl
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.view.MainActivity
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.repository.ComicRepository
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.repository.ComicRepositoryImpl
-import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.viewModel.ComicsViewModel
-import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.viewModel.ComicsViewModelFactory
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.viewmodel.ComicsViewModel
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.viewmodel.ComicsViewModelFactory
 import dagger.Module
 import dagger.Provides
 
@@ -21,5 +23,9 @@ class ComicListModule {
     @Provides
     fun provideComicRepository(comicRepository: ComicRepositoryImpl): ComicRepository =
             comicRepository
+
+    @Provides
+    fun provideComicsUseCase(fetchComicsUseCase: FetchComicsUseCaseImpl): FetchComicsUseCase =
+            fetchComicsUseCase
 
 }

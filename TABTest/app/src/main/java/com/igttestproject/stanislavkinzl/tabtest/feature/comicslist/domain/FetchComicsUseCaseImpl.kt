@@ -15,7 +15,10 @@ class FetchComicsUseCaseImpl @Inject constructor(
     private var callback: FetchComicsUseCase.Callback? = null
 
     override fun execute() {
-      //  disposable = comicsRepository.fetchComics()
+        disposable = comicsRepository.fetchComics()
+                .subscribeOn(scheduleProvider.io())
+                .observeOn(scheduleProvider.mainThread())
+                .subscribe(this::onSuccess, this::onError)
     }
 
     override fun setCallback(callback: FetchComicsUseCase.Callback) {

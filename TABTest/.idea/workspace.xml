@@ -6,7 +6,6 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="comic" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -38,29 +37,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ComicListModule.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/modules/ComicListModule.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ComicsViewModel.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="e#80#223#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FetchComicsUseCase.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCase.kt">
+      <file leaf-file-name="BaseActivity.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/base/BaseActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="300">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="e#60#163#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FetchComicsUseCaseImpl.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FetchComicsUseCaseImpl.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCaseImpl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+            <state relative-caret-position="150">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
                 <element signature="e#77#269#0" expanded="true" />
               </folding>
@@ -68,38 +82,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/Constants.kt">
+      <file leaf-file-name="ComicsViewModelImpl.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModelImpl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="255">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="e#80#258#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ComicsViewModelFactory.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModelFactory.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/view/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bundle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/os/Bundle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comic.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/model/Comic.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="204">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -107,19 +115,10 @@
       <file leaf-file-name="ComicRepository.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicRepository.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScheduleProvider.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/ScheduleProvider.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="206">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
-                <element signature="e#55#183#0" expanded="true" />
+                <marker date="1541292318272" expanded="true" signature="907:2177" ph="..." />
               </folding>
             </state>
           </provider>
@@ -128,7 +127,7 @@
       <file leaf-file-name="ComicMapper.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicMapper.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="300">
               <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
@@ -2234,12 +2233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/repository/database/remote/NetworkModule.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/repository/database/remote/entity/Response.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/repository/database/remote/entity/Comic.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/representation/comicslist/ComicsListPresenter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/mvp/repository/database/remote/entity/Data.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/dependencyinjection/AppComponent.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/dependencyinjection/ActivityBindings.kt" />
         <option value="$PROJECT_DIR$/buildSrc/src/main/java/Dependencies.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/dependencyinjection/AppModule.kt" />
@@ -2282,16 +2275,21 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/PicassoImageLoader.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/ImageLoader.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/dependencyinjection/AppModule.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCase.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModelFactory.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/database/remote/ApiInterface.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicRepository.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCaseImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/modules/ComicListModule.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/view/MainActivity.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="822" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
-    <option name="width" value="858" />
+    <option name="width" value="821" />
     <option name="height" value="947" />
   </component>
   <component name="ProjectView">
@@ -2399,6 +2397,15 @@
               <item name="feature" type="462c0819:PsiDirectoryNode" />
               <item name="comicslist" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TABTest" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="tabtest" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="feature" type="462c0819:PsiDirectoryNode" />
+              <item name="comicslist" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TABTest" type="1abcf292:AndroidViewProjectNode" />
@@ -2589,7 +2596,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="822" y="23" width="858" height="947" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
@@ -2602,12 +2609,12 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32846716" />
-      <window_info anchor="bottom" id="Logcat" order="7" weight="0.42335767" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.42335767" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992743" visible="true" weight="0.21323529" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.26173097" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992743" visible="true" weight="0.13736264" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.45046923" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32853717" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2687,13 +2694,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/database/remote/GetComicsResponse.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicMapper.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -2719,6 +2719,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <element signature="e#80#223#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2882,27 +2885,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/base/BaseActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#60#163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/dependencyinjection/ActivityBindings.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/database/remote/ApiInterface.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -2917,20 +2903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -2992,20 +2964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/view/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/modules/ComicListModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -3027,41 +2985,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModelImpl.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/database/remote/ApiInterface.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="150">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCaseImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#77#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicMapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1541292318272" expanded="true" signature="907:2177" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModelFactory.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCaseImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <element signature="e#77#269#0" expanded="true" />
+            <element signature="e#80#223#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModelImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#80#258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/app/base/BaseActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#60#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/modules/ComicListModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/modules/ComicListModule_ProvideComicsViewModelFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/view/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
         </state>
       </provider>
     </entry>
