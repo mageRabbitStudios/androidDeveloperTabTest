@@ -8,11 +8,12 @@ import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.repository.C
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.repository.ComicRepositoryImpl
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.viewmodel.ComicsViewModel
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.viewmodel.ComicsViewModelFactory
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.injection.ComicsListWidgetModule
 import dagger.Module
 import dagger.Provides
 
 
-@Module
+@Module(includes = [ComicsListWidgetModule::class])
 class ComicListModule {
 
     @Provides
