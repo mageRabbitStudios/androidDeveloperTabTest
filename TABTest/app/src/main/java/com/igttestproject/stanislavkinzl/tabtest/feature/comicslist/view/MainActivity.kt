@@ -14,11 +14,15 @@ import javax.inject.Inject
 
 class MainActivity : BaseActivity() {
 
+    //================= WIDGETS ===================
+
     @Inject
     lateinit var comicsViewModel: ComicsViewModel
 
     @Inject
     lateinit var comicsListWidget: ComicsListWidget
+
+    //=============================================
 
     override fun provideLayout(): Int = R.layout.activity_main
 
@@ -42,13 +46,7 @@ class MainActivity : BaseActivity() {
         is ComicsViewModel.State.FetchMemesSuccess
         ->
             for (comic in state.comics) {
-//                Toasty.success(this, comic.name, Toast.LENGTH_SHORT).show()
-//                Log.i(comic.name, comic.url)
                 comicsListWidget.addResults(state.comics)
-                for (comic in state.comics) {
-                    Log.w("COMIC LOADED:", comic.toString())
-
-                }
                 Toasty.success(this, "Success loading comics", Toast.LENGTH_LONG).show()
             }
 

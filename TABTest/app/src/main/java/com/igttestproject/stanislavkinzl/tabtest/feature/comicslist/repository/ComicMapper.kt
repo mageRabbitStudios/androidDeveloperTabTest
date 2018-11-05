@@ -21,8 +21,7 @@ class ComicMapper @Inject constructor() {
 
         return Comic(
                 name = comicItem.name ?: "",
-                url = comicItem.thumbnail.path!!,
-                extenson = comicItem.thumbnail.extension ?: "",
+                url = "${comicItem.thumbnail.path}/standard_medium.${comicItem.thumbnail.extension}",
                 pageCount = comicItem.pageCount ?: 0
         )
     }

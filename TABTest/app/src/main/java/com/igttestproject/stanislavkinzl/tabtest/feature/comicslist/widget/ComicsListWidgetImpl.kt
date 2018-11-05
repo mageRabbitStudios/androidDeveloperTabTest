@@ -20,26 +20,11 @@ class ComicsListWidgetImpl @Inject constructor(
 
     override fun init(view: View) {
 
-       /* val spanCount: Int = when(context.resources.configuration.orientation) {
-            Configuration.ORIENTATION_PORTRAIT -> NUMBER_OF_COMICS_PER_ROW_PORTRAIT
-            else -> NUMBER_OF_COMICS_PER_ROW_LANDSCAPE
-        }
-
-        val mLayoutManager = GridLayoutManager(context, spanCount)
-        recyclerView.layoutManager = mLayoutManager
-
-        recyclerView.addItemDecoration(GridSpacingItemDecoration(spanCount, dpToPx(10), true))
-        recyclerView.itemAnimator = DefaultItemAnimator()*/
-
         containerView = view
         rvComics.layoutManager = gridLayoutManager
         rvComics.addItemDecoration(itemDecoration)
         rvComics.itemAnimator = DefaultItemAnimator()
         rvComics.adapter = comicsAdapter
-
-      //  rvComics.layoutManager = layoutManager
-      //  rvComics.adapter = comicsAdapter
-
 
     }
 

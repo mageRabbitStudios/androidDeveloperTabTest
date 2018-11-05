@@ -18,7 +18,5 @@ class ComicsListAdapterViewHolder(
     fun showComic(comic: Comic) {
         showImage(comic.url)
         comics_list_item_title.text = comic.name
-    //    comics_list_itemcount.text = comic.pageCount.toString()
     }
-
 }
