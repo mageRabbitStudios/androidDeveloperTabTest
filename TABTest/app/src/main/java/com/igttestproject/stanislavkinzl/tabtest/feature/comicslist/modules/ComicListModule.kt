@@ -8,12 +8,16 @@ import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.repository.C
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.repository.ComicRepositoryImpl
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.viewmodel.ComicsViewModel
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.viewmodel.ComicsViewModelFactory
-import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.injection.ComicsListWidgetModule
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist.injection.ComicsListWidgetModule
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.toolbar.injection.ToolbarWidgetModule
 import dagger.Module
 import dagger.Provides
 
 
-@Module(includes = [ComicsListWidgetModule::class])
+@Module(includes = [
+    ComicsListWidgetModule::class,
+    ToolbarWidgetModule::class
+])
 class ComicListModule {
 
     @Provides

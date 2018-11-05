@@ -2,13 +2,13 @@ package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.view
 
 import android.arch.lifecycle.Observer
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.igttestproject.stanislavkinzl.tabtest.R
 import com.igttestproject.stanislavkinzl.tabtest.app.base.BaseActivity
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.viewmodel.ComicsViewModel
-import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.ComicsListWidget
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist.ComicsListWidget
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.toolbar.ToolbarWidget
 import es.dmoral.toasty.Toasty
 import javax.inject.Inject
 
@@ -22,17 +22,22 @@ class MainActivity : BaseActivity() {
     @Inject
     lateinit var comicsListWidget: ComicsListWidget
 
+    @Inject
+    lateinit var toolbarWidget: ToolbarWidget
+
     //=============================================
 
     override fun provideLayout(): Int = R.layout.activity_main
 
     override fun initWidgets(view: View) {
         comicsListWidget.init(view)
+        toolbarWidget.init(view)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         comicsViewModel.getComicsApiList()
+        setSupportActionBar(toolbarWidget.toolbar)
     }
 
     override fun provideViewModel() {
