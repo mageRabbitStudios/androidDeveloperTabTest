@@ -3,8 +3,6 @@ package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.inje
 import android.content.Context
 import android.content.res.Configuration
 import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import com.igttestproject.stanislavkinzl.tabtest.app.Calculator
 import com.igttestproject.stanislavkinzl.tabtest.app.ImageLoader
 import com.igttestproject.stanislavkinzl.tabtest.app.NUMBER_OF_COMICS_PER_ROW_LANDSCAPE
@@ -26,9 +24,6 @@ class ComicsListWidgetModule {
     fun provideComicsListAdapter(context: Context, imageLoader: ImageLoader): ComicsListAdapter =
             ComicsListAdapter(context, imageLoader)
 
-   /* @Provides
-    fun provideLayoutManager(context: Context): RecyclerView.LayoutManager =
-            LinearLayoutManager(context)*/
 
     @Provides
     fun provideGridLayoutManager(context: Context, spanCount: Int): GridLayoutManager =

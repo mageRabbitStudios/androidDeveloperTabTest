@@ -11,12 +11,17 @@ class ComicsListAdapterViewHolder(
         private val imageLoader: ImageLoader
 ) : BaseViewHolder(containerView) {
 
-    fun showImage(url: String?) {
+    private fun showImage(url: String?) {
         url?.let { imageLoader.load(it, comics_list_item_thumbnail) }
     }
 
     fun showComic(comic: Comic) {
         showImage(comic.url)
         comics_list_item_title.text = comic.name
+        comics_list_item_count.text = when(comic.pageCount) {
+
+            0    -> "Unknown"
+            else -> comic.pageCount.toString()
+        }
     }
 }
