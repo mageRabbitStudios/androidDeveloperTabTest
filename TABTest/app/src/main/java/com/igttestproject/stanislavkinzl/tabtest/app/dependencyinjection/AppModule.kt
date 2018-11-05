@@ -2,10 +2,7 @@ package com.igttestproject.stanislavkinzl.tabtest.app.dependencyinjection
 
 import android.app.Application
 import android.content.Context
-import com.igttestproject.stanislavkinzl.tabtest.app.DefaultSchedulerProvider
-import com.igttestproject.stanislavkinzl.tabtest.app.ImageLoader
-import com.igttestproject.stanislavkinzl.tabtest.app.PicassoImageLoader
-import com.igttestproject.stanislavkinzl.tabtest.app.SchedulerProvider
+import com.igttestproject.stanislavkinzl.tabtest.app.*
 import com.igttestproject.stanislavkinzl.tabtest.app.database.remote.dependencyinjection.NetworkModule
 import dagger.Module
 import dagger.Provides
@@ -24,5 +21,8 @@ class AppModule {
 
     @Provides
     internal fun provideImageLoader(): ImageLoader = PicassoImageLoader()
+
+    @Provides
+    internal fun provideCalculator(context: Context): Calculator = Calculator(context)
 
 }

@@ -1,6 +1,5 @@
 package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.adapter
 
-import android.net.Uri
 import android.view.View
 import com.igttestproject.stanislavkinzl.tabtest.app.ImageLoader
 import com.igttestproject.stanislavkinzl.tabtest.app.base.BaseViewHolder
@@ -19,7 +18,7 @@ class ComicsListAdapterViewHolder(
     fun showComic(comic: Comic) {
         showImage(comic.url)
         comics_list_item_title.text = comic.name
-        comics_list_itemcount.text = comic.pageCount.toString()
+    //    comics_list_itemcount.text = comic.pageCount.toString()
     }
 
 }

@@ -45,6 +45,11 @@ class MainActivity : BaseActivity() {
 //                Toasty.success(this, comic.name, Toast.LENGTH_SHORT).show()
 //                Log.i(comic.name, comic.url)
                 comicsListWidget.addResults(state.comics)
+                for (comic in state.comics) {
+                    Log.w("COMIC LOADED:", comic.toString())
+
+                }
+                Toasty.success(this, "Success loading comics", Toast.LENGTH_LONG).show()
             }
 
         ComicsViewModel.State.FetchMemesError
