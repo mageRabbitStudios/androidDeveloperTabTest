@@ -16,11 +16,11 @@ data class Data(
 )
 
 data class ComicItem(
-        @SerializedName("id")           val id: Int?,
-        @SerializedName("title")        val name: String?,
-        @SerializedName("description")  val description: String?,
-        @SerializedName("thumbnail")    val thumbnail: Thumbnail?,
-        @SerializedName("pageCount")    val pageCount: Int?
+    @SerializedName("id")           val id: Int?,
+    @SerializedName("title")        val name: String?,
+    @SerializedName("description")  val description: String?,
+    @SerializedName("thumbnail")    val thumbnail: Thumbnail?,
+    @SerializedName("pageCount")    val pageCount: Int?
 )
 
 data class Thumbnail(

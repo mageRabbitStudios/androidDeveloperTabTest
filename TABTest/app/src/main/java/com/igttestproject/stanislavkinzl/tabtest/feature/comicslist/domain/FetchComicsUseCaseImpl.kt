@@ -11,7 +11,10 @@ class FetchComicsUseCaseImpl @Inject constructor(
         private val scheduleProvider: SchedulerProvider
 ) : FetchComicsUseCase {
 
+    //the disposable which is model used to store given List/data between repository and viewModel
     private var disposable: Disposable? = null
+
+    //callback is callback, there is only one callback for this given use case onFetchComicsResult()
     private var callback: FetchComicsUseCase.Callback? = null
 
     override fun execute() {

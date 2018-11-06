@@ -12,7 +12,7 @@ class AppModule {
 
     @Provides
     internal fun provideContext(application: Application): Context {
-        return application
+        return application.applicationContext
     }
 
     @Provides

@@ -1,9 +1,7 @@
 package com.igttestproject.stanislavkinzl.tabtest.app.database.remote.dependencyinjection
 
-import com.igttestproject.stanislavkinzl.tabtest.app.API_KEY
-import com.igttestproject.stanislavkinzl.tabtest.app.PRIVATE_KEY
 import com.igttestproject.stanislavkinzl.tabtest.app.database.remote.ApiInterface
-import com.igttestproject.stanislavkinzl.tabtest.app.extensions.md5
+import com.igttestproject.stanislavkinzl.tabtest.app.database.remote.ApiKeyInterceptor
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -11,7 +9,6 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.*
 
 @Module
 class NetworkModule {
@@ -35,21 +32,11 @@ class NetworkModule {
     fun provideBaseUrl(): String = "http://gateway.marvel.com/v1/public/"
 
     @Provides
-    fun provideOkHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor, timestamp: Long): OkHttpClient {
+    fun provideOkHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor,
+                            httpApiInterceptor: ApiKeyInterceptor): OkHttpClient {
         val httpClient = OkHttpClient.Builder()
         httpClient.addInterceptor(httpLoggingInterceptor)
-        httpClient.addInterceptor { chain ->
-
-            val originalHttpUrl = chain.request().url()
-
-            val url = originalHttpUrl.newBuilder()
-                    .addQueryParameter("apikey", API_KEY)
-                    .addQueryParameter("ts", timestamp.toString())
-                    .addQueryParameter("hash", "$timestamp$PRIVATE_KEY$API_KEY".md5())
-                    .build()
-
-            chain.proceed(chain.request().newBuilder().url(url).build())
-        }
+        httpClient.addInterceptor(httpApiInterceptor)
         return httpClient.build()
     }
 
@@ -58,6 +45,6 @@ class NetworkModule {
             HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
 
     @Provides
-    fun provideTimestamp(): Long =
-            Calendar.getInstance(TimeZone.getTimeZone("UTC")).timeInMillis / 1000
+    fun provideHttpApiInterceptor(): ApiKeyInterceptor =
+            ApiKeyInterceptor()
 }

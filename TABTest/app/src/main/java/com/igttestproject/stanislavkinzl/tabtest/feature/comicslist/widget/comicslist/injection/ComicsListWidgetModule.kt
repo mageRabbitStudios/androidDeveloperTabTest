@@ -7,7 +7,7 @@ import com.igttestproject.stanislavkinzl.tabtest.app.Calculator
 import com.igttestproject.stanislavkinzl.tabtest.app.ImageLoader
 import com.igttestproject.stanislavkinzl.tabtest.app.NUMBER_OF_COMICS_PER_ROW_LANDSCAPE
 import com.igttestproject.stanislavkinzl.tabtest.app.NUMBER_OF_COMICS_PER_ROW_PORTRAIT
-import com.igttestproject.stanislavkinzl.tabtest.app.common.GridSpacingItemDecoration
+import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist.GridSpacingItemDecoration
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist.ComicsListWidget
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist.ComicsListWidgetImpl
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist.adapter.ComicsListAdapter

@@ -1,21 +1,22 @@
 package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.toolbar
 
-import android.support.v7.widget.Toolbar
+import android.support.v7.app.AppCompatActivity
 import android.view.View
-import com.igttestproject.stanislavkinzl.tabtest.R
 import kotlinx.android.extensions.LayoutContainer
+import kotlinx.android.synthetic.main.widget_toolbar.*
 import javax.inject.Inject
 
 class ToolbarWidgetImpl @Inject constructor(
-): ToolbarWidget, LayoutContainer {
+) : ToolbarWidget, LayoutContainer {
 
     override lateinit var containerView: View
 
-    override lateinit var toolbar: Toolbar
-
     override fun init(view: View) {
         containerView = view
-        val toolbar: Toolbar = view.findViewById(R.id.toolbar)
-        this.toolbar = toolbar
     }
+
+    override fun setToolbar(activity: AppCompatActivity) {
+        activity.setSupportActionBar(toolbar)
+    }
+
 }

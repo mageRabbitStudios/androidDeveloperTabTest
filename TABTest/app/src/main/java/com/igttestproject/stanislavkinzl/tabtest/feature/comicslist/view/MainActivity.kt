@@ -37,7 +37,7 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         comicsViewModel.getComicsApiList()
-        setSupportActionBar(toolbarWidget.toolbar)
+        toolbarWidget.setToolbar(this)
     }
 
     override fun provideViewModel() {

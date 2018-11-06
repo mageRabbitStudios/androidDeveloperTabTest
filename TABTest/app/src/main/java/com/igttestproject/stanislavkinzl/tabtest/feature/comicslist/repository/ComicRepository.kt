@@ -23,42 +23,4 @@ class ComicRepositoryImpl @Inject constructor(
 
     override fun fetchComics(): Single<List<Comic>> = apiInterface.allComics().map(mapper::map)
 
-       /* val call = apiInterface.allComics()
-
-        Log.i("TAG", "Fetch Meme Call Executed")
-        call.enqueue(object : retrofit2.Callback<GetComicsResponse> {
-            override fun onResponse(call: Call<GetComicsResponse>, response: Response<GetComicsResponse>) {
-                Log.i("TAG", "On Response")
-2
-                if (response != null) {
-                    val memes = response.body()!!.data
-                    val memeList = memes!!.comics
-                    val memeArrayList = ArrayList<Comic>()
-
-                    for (meme in memeList!!) {
-                        memeArrayList.plus(Comic(
-                                meme.name!!,
-                                meme.thumbnail!!.path!!,
-                                meme.thumbnail.extension!!,
-                                meme.pageCount!!)
-                        )
-                        Log.i("TAG", "Logging " + meme.toString())
-
-                    }
-                    comicResponseLiveData.value = memeArrayList
-                } else {
-                    Log.e("TAG", "Response is null")
-                }
-            }
-
-            override fun onFailure(call: Call<GetComicsResponse>, t: Throwable) {
-                Log.e("TAG", "Request failed")
-
-            }
-        })*/
-
-
-
-    // override fun getComics(): Single<List<Comic>> = apiInterface.allComics().map(mapper::map)
-   // override fun getComics(): Single<List<Comic>> = apiInterface.allComics().map(mapper::map)
 }

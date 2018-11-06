@@ -8,6 +8,12 @@ class ComicsViewModelImpl constructor(
     private val fetchComicsUseCase: FetchComicsUseCase
 ): ComicsViewModel(), FetchComicsUseCase.Callback {
 
+    /**well becouse it implements one of it's interface's Callback interface, it can
+    /afford the luxury of having the callback here. onFetchComicsResults get's called
+     everytime it's callback is notified - which is in that use case.
+
+     So the variable of the callback, which is in the use case, needs to be set here, so the use case later knows
+     which method to call on it's */
     init { fetchComicsUseCase.setCallback(this) }
 
     //callbacks

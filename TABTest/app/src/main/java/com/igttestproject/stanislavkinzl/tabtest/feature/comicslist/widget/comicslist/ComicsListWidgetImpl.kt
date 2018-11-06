@@ -3,7 +3,6 @@ package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comi
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.GridLayoutManager
 import android.view.View
-import com.igttestproject.stanislavkinzl.tabtest.app.common.GridSpacingItemDecoration
 import com.igttestproject.stanislavkinzl.tabtest.app.model.Comic
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist.adapter.ComicsListAdapter
 import kotlinx.android.extensions.LayoutContainer
