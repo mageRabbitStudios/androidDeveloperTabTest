@@ -1,7 +1,7 @@
 package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.repository
-import com.igttestproject.stanislavkinzl.tabtest.app.model.Comic
 import com.igttestproject.stanislavkinzl.tabtest.app.database.remote.ComicItem
 import com.igttestproject.stanislavkinzl.tabtest.app.database.remote.GetComicsResponse
+import com.igttestproject.stanislavkinzl.tabtest.app.model.Comic
 import javax.inject.Inject
 
 class ComicMapper @Inject constructor() {
@@ -15,13 +15,14 @@ class ComicMapper @Inject constructor() {
             comicsResponse.data?.comics?.mapNotNull(::mapOrNull) ?: ArrayList()
 
     private fun mapOrNull(comicItem: ComicItem): Comic? {
-        if (comicItem.thumbnail!!.path == null) {
+        //this checks if the comic essentials exist, in test we check null
+        if (comicItem.thumbnail?.path == null) {
             return null
         }
 
         return Comic(
                 name = comicItem.name ?: "",
-                url = "${comicItem.thumbnail.path}/standard_medium.${comicItem.thumbnail.extension}",
+                url = "${comicItem.thumbnail.path ?: ""}/standard_medium.${comicItem.thumbnail.extension}",
                 pageCount = comicItem.pageCount ?: 0
         )
     }

@@ -56,6 +56,6 @@ class MainActivity : BaseActivity() {
             }
 
         ComicsViewModel.State.FetchMemesError
-        -> Toasty.error(this, "Error loading comics", Toast.LENGTH_SHORT).show()
+            -> Toasty.error(this, "Error loading comics", Toast.LENGTH_SHORT).show()
     }
 }

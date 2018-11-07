@@ -1,5 +1,6 @@
 package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist
 
+import android.support.annotation.VisibleForTesting
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.GridLayoutManager
 import android.view.View
@@ -18,13 +19,14 @@ class ComicsListWidgetImpl @Inject constructor(
     override lateinit var containerView: View
 
     override fun init(view: View) {
-
         containerView = view
+        initRecyclerView()
+    }
+
+    fun initRecyclerView() {
         rvComics.layoutManager = gridLayoutManager
         rvComics.addItemDecoration(itemDecoration)
-        rvComics.itemAnimator = DefaultItemAnimator()
         rvComics.adapter = comicsAdapter
-
     }
 
     override fun addResults(memeList: List<Comic>) {
