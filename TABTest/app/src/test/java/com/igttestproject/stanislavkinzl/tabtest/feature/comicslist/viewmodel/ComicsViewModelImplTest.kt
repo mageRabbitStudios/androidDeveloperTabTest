@@ -25,7 +25,7 @@ class ComicsViewModelImplTest {
     @Mock private lateinit var mockFetchComicsUseCase: FetchComicsUseCase
 
     private val testComicsList: List<Comic> = listOf(
-            Comic("TestC", "TestUrl", 10),
+            Comic(name = "TestC", url = "TestUrl", pageCount = 10),
             Comic(name = "TestC", url = "TestUrl", pageCount = 10)
     )
 

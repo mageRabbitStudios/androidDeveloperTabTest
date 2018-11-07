@@ -14,7 +14,7 @@ const val noPathJsonFilePath     = "comics/all_comics_list_no_path.json"
 const val noThumbJsonFilePath    = "comics/all_comics_list_no_thumbnail.json"
 
 /**Comics expected for test purposes*/
-//first test
+//first test comics
 val spiderman = Comic(
         name = "Spiderman",
         url = "path_spiderman/standard_medium.spiderman.jpg",
@@ -25,7 +25,8 @@ val batman = Comic(
         url  = "path_batman/standard_medium.batman.jpg",
         pageCount = 20
 )
-//second test
+
+//second test comics
 val spiderman_without_name = Comic(
         name = "",
         url = "path_spiderman/standard_medium.spiderman.jpg",

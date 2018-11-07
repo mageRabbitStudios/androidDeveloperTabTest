@@ -54,7 +54,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ComicsListWidgetImpl.kt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ComicsListWidgetImpl.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/widget/comicslist/ComicsListWidgetImpl.kt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="210">
@@ -66,11 +66,8 @@
           <file leaf-file-name="ComicsListWidgetImplTest.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/widget/comicslist/ComicsListWidgetImplTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
+                <state relative-caret-position="240">
                   <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-                  <folding>
-                    <element signature="e#88#590#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -84,14 +81,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ComicMapperTest.kt" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ComicMapperTest.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/ComicMapperTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="452">
-                  <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-                  <folding>
-                    <element signature="e#88#607#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="540">
+                  <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -99,7 +93,7 @@
           <file leaf-file-name="MapperTestUtils.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/MapperTestUtils.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
+                <state relative-caret-position="195">
                   <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
                   <folding>
                     <element signature="e#88#199#0" expanded="true" />
@@ -115,7 +109,7 @@
           <file leaf-file-name="ComicRepository.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicRepository.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
+                <state relative-caret-position="225">
                   <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
                   <folding>
                     <element signature="e#81#281#0" expanded="true" />
@@ -127,11 +121,8 @@
           <file leaf-file-name="ComicsListWidgetImpl.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/widget/comicslist/ComicsListWidgetImpl.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="249">
+                <state relative-caret-position="135">
                   <caret line="17" selection-start-line="17" selection-end-line="17" />
-                  <folding>
-                    <element signature="e#88#581#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -154,11 +145,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ComicMapper.kt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ComicMapper.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicMapper.kt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="315">
                   <caret line="24" column="97" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FetchComicsUseCaseImplTest.kt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCaseImplTest.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#77#581#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -181,11 +184,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MapperTestUtils.kt" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MapperTestUtils.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/MapperTestUtils.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+                <state relative-caret-position="420">
+                  <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
                   <folding>
                     <element signature="e#88#199#0" expanded="true" />
                   </folding>
@@ -196,20 +199,11 @@
           <file leaf-file-name="TestUtils.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/TestUtils.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
+                <state relative-caret-position="240">
                   <caret line="17" selection-start-line="17" selection-end-line="17" />
                   <folding>
                     <element signature="e#51#97#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_Collections.kt" pinned="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.20/9ab74271f4694e32e8b2ee645a96ac9bcaf0bc32/kotlin-stdlib-1.2.20-sources.jar!/generated/_Collections.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
-                  <caret line="1266" column="43" selection-start-line="1266" selection-start-column="43" selection-end-line="1266" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
@@ -2368,10 +2362,10 @@
         <option value="$PROJECT_DIR$/app/src/test/resources/comics/all_comics_list_no_thumbnail.json" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicMapperTest.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/MapperTestVal.kt" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/MapperTestUtils.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/TestUtils.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/ComicMapperTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicMapper.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/MapperTestUtils.kt" />
       </list>
     </option>
   </component>
@@ -2386,7 +2380,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2497,18 +2490,6 @@
               <item name="feature" type="462c0819:PsiDirectoryNode" />
               <item name="comicslist" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TABTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TABTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tabtest" type="462c0819:PsiDirectoryNode" />
-              <item name="feature" type="462c0819:PsiDirectoryNode" />
-              <item name="comicslist" type="462c0819:PsiDirectoryNode" />
-              <item name="viewmodel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TABTest" type="b2602c69:ProjectViewProjectNode" />
@@ -2662,7 +2643,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2896,6 +2876,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2977,10 +2959,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ComicMapperTest.map (2)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
@@ -3004,10 +2982,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ComicMapperTest.map (3)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
@@ -3031,10 +3005,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ComicMapperTest.map (4)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
@@ -3058,10 +3028,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ComicMapperTest.map (5)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
@@ -3085,10 +3051,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -3253,15 +3215,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-158" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" sideWeight="0.5007257" side_tool="true" weight="0.21778488" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31951466" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31951466" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32846716" />
       <window_info anchor="bottom" id="Logcat" order="7" weight="0.27945778" />
@@ -3269,7 +3232,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49843588" visible="true" weight="0.17305644" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.16885743" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.16915423" />
       <window_info anchor="right" id="Gradle" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="8" sideWeight="0.5171849" side_tool="true" weight="0.32967034" />
@@ -3302,7 +3265,6 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Preview" order="7" sideWeight="0.48281506" weight="0.32967034" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32846716" />
       <window_info anchor="right" id="Device File Explorer" order="8" sideWeight="0.5171849" side_tool="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Logcat" order="10" weight="0.27945778" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -3315,6 +3277,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32846716" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -3511,20 +3474,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModelFactory.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewModel/ComicsViewModelFactory.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModel.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewModel/ComicsViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#80#223#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3549,13 +3509,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewmodel/ComicsViewModelImpl.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/viewModel/ComicsViewModelImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding>
-            <element signature="e#80#258#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3563,9 +3520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#85#289#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3580,19 +3534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#85#157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCaseImplTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding>
-            <element signature="e#77#581#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3600,32 +3541,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#80#617#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.20/9ab74271f4694e32e8b2ee645a96ac9bcaf0bc32/kotlin-stdlib-1.2.20-sources.jar!/generated/_Collections.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="18990">
           <caret line="1266" column="43" selection-start-line="1266" selection-start-column="43" selection-end-line="1266" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/widget/comicslist/ComicsListWidgetImplTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <element signature="e#88#590#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="225">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="e#81#281#0" expanded="true" />
@@ -3640,16 +3568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicRepositoryImplTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#81#566#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/resources/comics/all_comics_list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -3657,16 +3575,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/TestUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#70#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/TestUtils.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/test/resources/comics/all_comics_list_no_name.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -3676,7 +3585,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/TestUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="240">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#51#97#0" expanded="true" />
@@ -3705,9 +3614,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/MapperTestUtils.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/ExampleUnitTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/domain/FetchComicsUseCaseImplTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="e#77#581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/widget/comicslist/ComicsListWidgetImplTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/ComicRepositoryImplTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#81#566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/widget/comicslist/ComicsListWidgetImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/MapperTestUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
           <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
           <folding>
             <element signature="e#88#199#0" expanded="true" />
@@ -3717,25 +3667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/repository/mapper/ComicMapperTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="e#88#607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/igttestproject/stanislavkinzl/tabtest/ExampleUnitTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/igttestproject/stanislavkinzl/tabtest/feature/comicslist/widget/comicslist/ComicsListWidgetImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="540">
+          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
         </state>
       </provider>
     </entry>
