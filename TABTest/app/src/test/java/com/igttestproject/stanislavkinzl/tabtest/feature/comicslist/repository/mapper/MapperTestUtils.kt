@@ -1,8 +1,6 @@
 package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.repository.mapper
 
-import com.google.gson.Gson
 import com.igttestproject.stanislavkinzl.tabtest.app.model.Comic
-import java.util.*
 
 /**
  * the file hierarchy for those starts at test/resources.
