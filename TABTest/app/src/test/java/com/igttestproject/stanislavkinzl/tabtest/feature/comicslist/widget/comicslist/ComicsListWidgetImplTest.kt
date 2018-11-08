@@ -1,5 +1,6 @@
 package com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist
 
+import android.support.test.runner.AndroidJUnit4
 import android.support.v7.widget.GridLayoutManager
 import android.view.View
 import com.igttestproject.stanislavkinzl.tabtest.feature.comicslist.widget.comicslist.adapter.ComicsListAdapter
@@ -14,33 +15,13 @@ import org.mockito.junit.MockitoJUnitRunner
 
 import kotlinx.android.synthetic.main.widget_comics_list.*
 
-
-@RunWith(MockitoJUnitRunner::class)
+//this contains the robolectric functions / rather than RobolectricTestRunner, which is for Robolectric 3.x versions
+@RunWith(AndroidJUnit4::class)
 class ComicsListWidgetImplTest {
-
-    @Mock private lateinit var mockComicsListAdapter: ComicsListAdapter
-    @Mock private lateinit var mockGridLayoutManager: GridLayoutManager
-    @Mock private lateinit var mockItemDecoration: GridSpacingItemDecoration
-
-    private lateinit var subject: ComicsListWidgetImpl
-
-    @Mock private lateinit var mockView: View
-
-    @Before
-    fun setUp() {
-        subject = ComicsListWidgetImpl(mockComicsListAdapter, mockGridLayoutManager, mockItemDecoration)
-    }
 
     @Test
     fun `init() - widget set`() {
-      //  given(subject.containerView).willReturn(mockView)
 
-     //   subject.containerView = mockView
-
-       // subject.initRecyclerView()
-       /* subject.init(mockView)
-
-        assertThat(subject.containerView).isEqualTo(mockView)*/
     }
 
 
