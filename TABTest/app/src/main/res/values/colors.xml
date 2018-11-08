@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#161616</color>
-    <color name="colorPrimaryDark">#161616</color>
-    <color name="colorAccent">#727272</color>
-    <color name="viewBg">#f1f5f8</color>
-    <color name="comic_title">#4c4c4c</color>
-    <color name="fragment_background">#444444</color>
-</resources>
