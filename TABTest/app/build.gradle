@@ -73,12 +73,10 @@ dependencies {
     implementation 'android.arch.lifecycle:runtime:1.1.1'
     implementation 'android.arch.lifecycle:extensions:1.1.1'
 
-
-    implementation Dependencies.retrofit
-    implementation Dependencies.retrofitRxJavaAdapter
-    implementation Dependencies.retrofitGson
-
-
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
 
     implementation Dependencies.picasso
     implementation Dependencies.cardView
