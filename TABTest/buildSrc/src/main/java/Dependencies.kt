@@ -17,7 +17,7 @@ object Versions {
     const val supportCompatPluginVersion = "3.0.1"
 
     //google
-    const val supportLibrary = "27.0.2"
+    const val supportLibrary = "28.0.0"
     const val archComponents = "1.0.0"
     const val archPagingVersion = "1.0.1"
 
