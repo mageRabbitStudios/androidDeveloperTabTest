@@ -26,3 +26,8 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+//TODO: This fixed problem with gradle wrapper (complaining about line 156 '%' missing or something, should we still keep this task?
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.6'
+}

@@ -13,7 +13,7 @@
             android:theme="@style/AppTheme"
             android:name=".app.App"
     >
-        <activity android:name=".feature.comicslist.view.MainActivity">
+        <activity android:name=".feature.feature_comicslist.view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

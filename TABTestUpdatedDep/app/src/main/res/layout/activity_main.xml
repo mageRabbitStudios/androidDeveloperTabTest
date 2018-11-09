@@ -4,7 +4,7 @@
     android:id="@+id/activity_main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.comicslist.view.MainActivity">
+    tools:context=".feature.feature_comicslist.view.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

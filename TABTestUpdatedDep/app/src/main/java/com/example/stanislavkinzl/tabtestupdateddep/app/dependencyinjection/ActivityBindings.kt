@@ -1,7 +1,7 @@
 package com.example.stanislavkinzl.tabtestupdateddep.app.dependencyinjection
 
-import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.dependencyinjection.ComicListModule
-import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.view.MainActivity
+import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.dependencyinjection.ComicListModule
+import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
