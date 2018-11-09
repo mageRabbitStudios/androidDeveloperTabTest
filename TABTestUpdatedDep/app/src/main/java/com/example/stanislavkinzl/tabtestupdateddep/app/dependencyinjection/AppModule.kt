@@ -11,9 +11,7 @@ import dagger.Provides
 class AppModule {
 
     @Provides
-    internal fun provideContext(application: Application): Context {
-        return application.applicationContext
-    }
+    internal fun provideContext(application: Application): Context = application
 
     @Provides
     internal fun provideSchedulerProvider(): SchedulerProvider = DefaultSchedulerProvider

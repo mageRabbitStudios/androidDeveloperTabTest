@@ -16,6 +16,7 @@ import org.mockito.junit.MockitoJUnitRunner
 @RunWith(MockitoJUnitRunner::class)
 class ComicsViewModelImplTest {
 
+    //this when working with rxjava
     @get:Rule
     val instantTaskExecutorRule = InstantTaskExecutorRule()
 
