@@ -5,7 +5,6 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.GetComic
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 import io.reactivex.Single
 import io.reactivex.observers.TestObserver
-import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

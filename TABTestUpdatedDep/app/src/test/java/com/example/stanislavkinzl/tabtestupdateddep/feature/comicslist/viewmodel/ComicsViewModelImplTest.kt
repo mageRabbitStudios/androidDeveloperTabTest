@@ -5,7 +5,6 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.domain.FetchComicsUseCase
 import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.repository.ComicRepository
 import org.assertj.core.api.Assertions
-import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

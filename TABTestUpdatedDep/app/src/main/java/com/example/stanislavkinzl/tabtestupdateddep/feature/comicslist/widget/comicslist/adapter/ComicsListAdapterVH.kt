@@ -7,8 +7,8 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 import kotlinx.android.synthetic.main.comic_card.*
 
 class ComicsListAdapterVH(
-    override val containerView: View,
-    private val imageLoader: ImageLoader
+    override val containerView: View
+    , private val imageLoader: ImageLoader
 ) : BaseViewHolder(containerView) {
 
     private fun showImage(url: String?) {

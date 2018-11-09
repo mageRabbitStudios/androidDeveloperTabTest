@@ -9,7 +9,6 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.base.BaseActivity
 import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.viewmodel.ComicsViewModel
 import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.widget.comicslist.ComicsListWidget
 import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.widget.toolbar.ToolbarWidget
-import es.dmoral.toasty.Toasty
 import javax.inject.Inject
 
 class MainActivity : BaseActivity() {
@@ -47,15 +46,16 @@ class MainActivity : BaseActivity() {
     }
 
     private fun onComicsViewModelStateChange(state: ComicsViewModel.State) = when (state) {
-
         is ComicsViewModel.State.FetchMemesSuccess
         ->
             for (comic in state.comics) {
                 comicsListWidget.addResults(state.comics)
-                Toasty.success(this, "Success loading comics", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Success loading comics", Toast.LENGTH_LONG).show()
+                System.out.println(comic.toString())
             }
-
-        ComicsViewModel.State.FetchMemesError
-        -> Toasty.error(this, "Error loading comics", Toast.LENGTH_SHORT).show()
+        is ComicsViewModel.State.FetchMemesError -> {
+            Toast.makeText(this, "Error loading comics", Toast.LENGTH_LONG).show()
+            System.out.println("Error")
+        }
     }
 }

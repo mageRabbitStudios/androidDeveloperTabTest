@@ -16,8 +16,6 @@ import javax.inject.Singleton
         AndroidSupportInjectionModule::class,
         TestAppModule::class,
         ActivityBindings::class
-        //,
-     //   TestActivityBindings::class
     ]
 )
 interface TestAppComponent : AndroidInjector<DaggerApplication> {

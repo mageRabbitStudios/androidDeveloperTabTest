@@ -9,8 +9,8 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.ImageLoader
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 
 class ComicsListAdapter(
-    private val context: Context,
-    private val imageLoader: ImageLoader
+    private val context: Context
+    , private val imageLoader: ImageLoader
 ) : RecyclerView.Adapter<ComicsListAdapterVH>() {
 
     private val comicsList: ArrayList<Comic> = ArrayList()

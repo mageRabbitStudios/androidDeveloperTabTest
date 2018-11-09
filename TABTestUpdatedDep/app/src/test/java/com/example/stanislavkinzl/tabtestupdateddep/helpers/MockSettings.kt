@@ -6,12 +6,12 @@ import java.net.HttpURLConnection
 object MockSettings {
 
     object EndpointJsons {
-        const val GET_MEMES_FULL = "comics/all_comics_list.json"
-        const val GET_MEMES_EMPTY = "comics/all_comics_list_empty.json"
+        const val GET_COMICS_FULL = "comics/all_comics_list.json"
+        const val GET_COMICS_EMPTY = "comics/all_comics_list_empty.json"
     }
 
     object EndpointValues {
-        var GET_MEMES = EndpointJsons.GET_MEMES_FULL
+        var GET_MEMES = EndpointJsons.GET_COMICS_FULL
     }
 
     object EndpointStatus {
@@ -24,7 +24,7 @@ object MockSettings {
     }
 
     fun updateEndpointValue(name: String, value: String) {
-        when(name){
+        when (name) {
             ApiInterface.Endpoints.GET_COMICS -> EndpointValues.GET_MEMES = value
         }
     }

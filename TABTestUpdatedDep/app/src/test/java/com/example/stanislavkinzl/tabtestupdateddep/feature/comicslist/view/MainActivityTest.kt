@@ -13,9 +13,11 @@ import org.robolectric.annotation.Config
 @RunWith(AndroidJUnit4::class)
 @Config(application = TestApp::class)
 class MainActivityTest {
+
+    //this is how you init a activity in Robolectric 4.0
     @get:Rule
     val rule = ActivityTestRule(MainActivity::class.java)
-   // lateinit var mainActivity: MainActivity
+    // lateinit var mainActivity: MainActivity
 
     @Before
     fun setUp() {

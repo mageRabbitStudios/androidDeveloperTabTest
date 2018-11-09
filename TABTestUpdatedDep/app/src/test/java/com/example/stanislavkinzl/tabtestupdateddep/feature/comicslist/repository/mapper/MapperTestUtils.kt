@@ -6,10 +6,10 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
  * the file hierarchy for those starts at test/resources.
  * Switch from Android to Project view tree.
  * */
-const val allComicsJsonFilePath  = "comics/all_comics_list.json"
-const val noNameJsonFilePath     = "comics/all_comics_list_no_name.json"
-const val noPathJsonFilePath     = "comics/all_comics_list_no_path.json"
-const val noThumbJsonFilePath    = "comics/all_comics_list_no_thumbnail.json"
+const val allComicsJsonFilePath = "comics/all_comics_list.json"
+const val noNameJsonFilePath = "comics/all_comics_list_no_name.json"
+const val noPathJsonFilePath = "comics/all_comics_list_no_path.json"
+const val noThumbJsonFilePath = "comics/all_comics_list_no_thumbnail.json"
 
 /**Comics expected for test purposes*/
 //first test comics
@@ -20,7 +20,7 @@ val spiderman = Comic(
 )
 val batman = Comic(
     name = "Batman",
-    url  = "path_batman/standard_medium.batman.jpg",
+    url = "path_batman/standard_medium.batman.jpg",
     pageCount = 20
 )
 

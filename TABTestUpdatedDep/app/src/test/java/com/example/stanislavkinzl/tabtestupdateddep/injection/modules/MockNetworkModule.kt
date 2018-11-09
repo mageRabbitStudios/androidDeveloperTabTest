@@ -1,8 +1,6 @@
 package com.example.stanislavkinzl.tabtestupdateddep.injection.modules
 
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface
-import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.repository.ComicRepository
-import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.repository.ComicRepositoryImpl
 import com.example.stanislavkinzl.tabtestupdateddep.injection.objects.OkHttpMockInterceptor
 import dagger.Module
 import dagger.Provides

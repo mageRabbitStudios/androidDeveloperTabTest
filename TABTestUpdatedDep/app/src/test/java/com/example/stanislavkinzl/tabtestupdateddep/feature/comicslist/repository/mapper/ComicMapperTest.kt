@@ -5,7 +5,6 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.repository.ComicMapper
 import com.example.stanislavkinzl.tabtestupdateddep.fileToGson
 import org.assertj.core.api.Assertions
-import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.InjectMocks

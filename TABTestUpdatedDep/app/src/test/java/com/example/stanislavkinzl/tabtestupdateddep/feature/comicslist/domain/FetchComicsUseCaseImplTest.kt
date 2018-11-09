@@ -5,11 +5,11 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 import com.example.stanislavkinzl.tabtestupdateddep.feature.comicslist.repository.ComicRepository
 import io.reactivex.Scheduler
 import io.reactivex.Single
-import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mockito.BDDMockito.*
+import org.mockito.BDDMockito.given
+import org.mockito.BDDMockito.then
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
 

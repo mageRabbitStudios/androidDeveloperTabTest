@@ -21,9 +21,10 @@ class ComicsListWidgetModule {
     fun provideComicsListWidget(comicsListWidget: ComicsListWidgetImpl): ComicsListWidget = comicsListWidget
 
     @Provides
-    fun provideComicsListAdapter(context: Context, imageLoader: ImageLoader): ComicsListAdapter =
-            ComicsListAdapter(context, imageLoader)
-
+    fun provideComicsListAdapter(context: Context, imageLoader: ImageLoader
+    ): ComicsListAdapter =
+            ComicsListAdapter(context, imageLoader
+            )
 
     @Provides
     fun provideGridLayoutManager(context: Context, spanCount: Int): GridLayoutManager =
