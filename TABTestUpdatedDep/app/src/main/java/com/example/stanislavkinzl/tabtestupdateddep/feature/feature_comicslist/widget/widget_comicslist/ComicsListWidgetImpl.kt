@@ -1,6 +1,6 @@
 package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_comicslist
 
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import android.view.View
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_comicslist.adapter.ComicsListAdapter

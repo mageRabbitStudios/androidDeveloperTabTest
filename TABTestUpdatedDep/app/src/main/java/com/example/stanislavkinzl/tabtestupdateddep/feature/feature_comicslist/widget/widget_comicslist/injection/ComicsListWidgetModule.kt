@@ -2,7 +2,7 @@ package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.
 
 import android.content.Context
 import android.content.res.Configuration
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.stanislavkinzl.tabtestupdateddep.app.Calculator
 import com.example.stanislavkinzl.tabtestupdateddep.app.ImageLoader
 import com.example.stanislavkinzl.tabtestupdateddep.app.NUMBER_OF_COMICS_PER_ROW_LANDSCAPE
@@ -28,7 +28,7 @@ class ComicsListWidgetModule {
 
     @Provides
     fun provideGridLayoutManager(context: Context, spanCount: Int): GridLayoutManager =
-            GridLayoutManager(context, spanCount)
+        GridLayoutManager(context, spanCount)
 
     @Provides
     fun provideSpanCount(context: Context): Int =

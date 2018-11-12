@@ -1,6 +1,6 @@
 package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view
 
-import android.arch.lifecycle.Observer
+import androidx.lifecycle.Observer
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast

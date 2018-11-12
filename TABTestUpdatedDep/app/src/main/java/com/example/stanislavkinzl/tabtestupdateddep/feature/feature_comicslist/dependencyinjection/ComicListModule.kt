@@ -1,6 +1,6 @@
 package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.dependencyinjection
 
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProviders
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.domain.FetchComicsUseCase
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.domain.FetchComicsUseCaseImpl
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository.ComicRepository

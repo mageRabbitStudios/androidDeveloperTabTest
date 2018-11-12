@@ -1,7 +1,7 @@
 package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.viewmodel
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.domain.FetchComicsUseCase
 
 class ComicsViewModelImpl constructor(

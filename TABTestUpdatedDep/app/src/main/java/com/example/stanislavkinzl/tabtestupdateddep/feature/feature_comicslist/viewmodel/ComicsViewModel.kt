@@ -1,7 +1,7 @@
 package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.viewmodel
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 
 abstract class ComicsViewModel : ViewModel() {

@@ -1,6 +1,6 @@
 package com.example.stanislavkinzl.tabtestupdateddep.testsLocal.feature.testfeature_comicslist.viewmodel
 
-import android.arch.core.executor.testing.InstantTaskExecutorRule
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.domain.FetchComicsUseCase
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository.ComicRepository
