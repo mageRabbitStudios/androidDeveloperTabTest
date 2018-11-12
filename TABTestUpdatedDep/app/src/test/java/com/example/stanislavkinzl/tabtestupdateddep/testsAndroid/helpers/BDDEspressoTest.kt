@@ -36,7 +36,7 @@ abstract class ActivityBDDEspressoTest <T : Activity> : BDDEspressoTest() {
         }
         step()
         if (!launchFirst) {
-            activityRule.launchActivity(Intent())
+             activityRule.launchActivity(Intent())
         }
     }
 }

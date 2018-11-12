@@ -20,8 +20,9 @@ object MainActivityTestSteps {
     }
 
     fun iSeeMockMemes() {
-        validateMemeItem(0, "Meme 1")
-        validateMemeItem(1, "Meme 2")
+        validateMemeItem(0, "Spiderman")
+        validateMemeItem(1, "Batman")
+        //validateMemeItem(2, "Nio")
     }
 
     fun iSeeEmptyMemes() {

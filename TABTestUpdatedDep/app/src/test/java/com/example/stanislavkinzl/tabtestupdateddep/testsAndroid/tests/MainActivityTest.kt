@@ -37,8 +37,7 @@ class MainActivityTest : ActivityBDDEspressoTest<MainActivity>() { //extension
     @Test
     fun resultsAreDisplayed() {
         Given { iSeeMainScreen() }
-        Then { iSeeMockMemes() }
-        System.out.println("ololo")
+        Then  { iSeeMockMemes() }
     }
 
     @Test

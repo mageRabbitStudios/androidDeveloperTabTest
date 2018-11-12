@@ -11,21 +11,21 @@ object MockSettings {
     }
 
     object EndpointValues {
-        var GET_MEMES = EndpointJsons.GET_COMICS_FULL
+        var GET_COMICS = EndpointJsons.GET_COMICS_FULL
     }
 
     object EndpointStatus {
-        var GET_MEMES = HttpURLConnection.HTTP_OK
+        var GET_COMICS = HttpURLConnection.HTTP_OK
     }
 
     fun getEndpointResponse(name: String): Pair<Int, String> = when (name) {
-        ApiInterface.Endpoints.GET_COMICS -> Pair(EndpointStatus.GET_MEMES, EndpointValues.GET_MEMES)
+        ApiInterface.Endpoints.GET_COMICS -> Pair(EndpointStatus.GET_COMICS, EndpointValues.GET_COMICS)
         else -> Pair(500, "")
     }
 
     fun updateEndpointValue(name: String, value: String) {
         when (name) {
-            ApiInterface.Endpoints.GET_COMICS -> EndpointValues.GET_MEMES = value
+            ApiInterface.Endpoints.GET_COMICS -> EndpointValues.GET_COMICS = value
         }
     }
 }
