@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_comicslist
+package com.example.stanislavkinzl.tabtestupdateddep.testsLocal.feature.testfeature_comicslist.widget
 
 import androidx.test.runner.AndroidJUnit4
 import org.junit.Test

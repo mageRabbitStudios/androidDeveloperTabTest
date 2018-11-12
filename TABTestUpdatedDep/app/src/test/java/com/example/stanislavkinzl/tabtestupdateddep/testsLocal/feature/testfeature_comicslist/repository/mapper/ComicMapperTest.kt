@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository.mapper
+package com.example.stanislavkinzl.tabtestupdateddep.testsLocal.feature.testfeature_comicslist.repository.mapper
 
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.GetComicsResponse
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic

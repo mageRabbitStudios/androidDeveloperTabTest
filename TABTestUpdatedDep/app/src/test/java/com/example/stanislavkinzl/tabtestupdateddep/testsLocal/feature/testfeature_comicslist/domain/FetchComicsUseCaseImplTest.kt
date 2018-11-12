@@ -1,7 +1,8 @@
-package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.domain
+package com.example.stanislavkinzl.tabtestupdateddep.testsLocal.feature.testfeature_comicslist.domain
 
 import com.example.stanislavkinzl.tabtestupdateddep.app.SchedulerProvider
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
+import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.domain.FetchComicsUseCaseImpl
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository.ComicRepository
 import io.reactivex.Scheduler
 import io.reactivex.Single
@@ -30,7 +31,10 @@ class FetchComicsUseCaseImplTest {
 
     @Before
     fun setUp() {
-        subject = FetchComicsUseCaseImpl(mockComicsRepository, mockScheduleProvider)
+        subject = FetchComicsUseCaseImpl(
+            mockComicsRepository,
+            mockScheduleProvider
+        )
     }
 
     @Test

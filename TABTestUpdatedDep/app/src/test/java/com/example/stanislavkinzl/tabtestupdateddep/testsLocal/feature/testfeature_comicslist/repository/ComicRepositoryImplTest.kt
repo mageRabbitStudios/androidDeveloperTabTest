@@ -1,8 +1,10 @@
-package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository
+package com.example.stanislavkinzl.tabtestupdateddep.testsLocal.feature.testfeature_comicslist.repository
 
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.GetComicsResponse
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
+import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository.ComicMapper
+import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository.ComicRepositoryImpl
 import io.reactivex.Single
 import io.reactivex.observers.TestObserver
 import org.junit.Before
@@ -37,7 +39,11 @@ class ComicRepositoryImplTest {
 
     @Before
     fun setUp() {
-        subject = ComicRepositoryImpl(mockApiInterface, mockMapper)
+        subject =
+                ComicRepositoryImpl(
+                    mockApiInterface,
+                    mockMapper
+                )
     }
 
     @Test
