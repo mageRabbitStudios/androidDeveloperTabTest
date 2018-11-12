@@ -15,9 +15,11 @@ class ComicsListWidgetImplTest {
 
     @Test
     fun initRecyclerView() {
+
     }
 
     @Test
     fun addResults() {
+
     }
 }

@@ -92,8 +92,6 @@ dependencies {
     //===== TEST DEPS =======
 
     //common
-   // testImplementation 'junit:junit:4.12'
-    //JUnit
     testImplementation "androidx.test.ext:junit:1.0.0"
 
     testImplementation 'org.mockito:mockito-inline:2.10.0'
