@@ -1,7 +1,7 @@
 package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.tests
 
 import androidx.test.rule.ActivityTestRule
-import androidx.test.runner.AndroidJUnit4
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.TestApp
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.ActivityBDDEspressoTest
@@ -17,17 +17,15 @@ import org.robolectric.annotation.Config
 
 
 @Suppress("DEPRECATION")
-@RunWith(AndroidJUnit4::class) //robolectric runs on this too
-@Config(application = TestApp::class) //this links the test with test dagger
-class MainActivityTest : ActivityBDDEspressoTest<MainActivity>() { //extension
-    //links the test with steps, helpers etc.
+@RunWith(AndroidJUnit4::class)
+@Config(application = TestApp::class)
+class MainActivityTest : ActivityBDDEspressoTest<MainActivity>() {
 
-    //This builds the activity
     @get:Rule
     val rule = ActivityTestRule(MainActivity::class.java)
 
     @Before
-    fun setUp() { activityRule = rule } //this passes our activity(rule) to our activityRule in BDDEspressoTest
+    fun setUp() { activityRule = rule }
 
     @Test
     fun testMainScreenDisplayedCorrectly() {
