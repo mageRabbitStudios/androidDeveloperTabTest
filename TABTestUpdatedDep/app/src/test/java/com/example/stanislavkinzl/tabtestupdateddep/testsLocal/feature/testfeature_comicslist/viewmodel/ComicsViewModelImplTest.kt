@@ -7,6 +7,7 @@ import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.r
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.viewmodel.ComicsViewModel
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.viewmodel.ComicsViewModelImpl
 import org.assertj.core.api.Assertions
+import org.assertj.core.api.Assertions.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -44,13 +45,13 @@ class ComicsViewModelImplTest {
     @Test
     fun `onFetchComicsResult() - Success`() {
         subject.onFetchComicsResult(FetchComicsUseCase.Result.Success(testComicsList))
-        Assertions.assertThat(subject.state().value).isEqualTo(ComicsViewModel.State.FetchMemesSuccess(testComicsList))
+        assertThat(subject.state().value).isEqualTo(ComicsViewModel.State.FetchMemesSuccess(testComicsList))
     }
 
     @Test
     fun `onFetchComicsResult() - Error`() {
         subject.onFetchComicsResult(FetchComicsUseCase.Result.Error)
-        Assertions.assertThat(subject.state().value).isEqualTo(ComicsViewModel.State.FetchMemesError)
+        assertThat(subject.state().value).isEqualTo(ComicsViewModel.State.FetchMemesError)
     }
 
 }

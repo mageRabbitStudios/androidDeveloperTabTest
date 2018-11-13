@@ -10,7 +10,7 @@ import io.reactivex.observers.TestObserver
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mockito.BDDMockito
+import org.mockito.BDDMockito.given
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
 
@@ -48,8 +48,8 @@ class ComicRepositoryImplTest {
 
     @Test
     fun `fetchComics() - fetches data and maps comics`() {
-        BDDMockito.given(mockApiInterface.allComics()).willReturn(Single.just(mockResponse))
-        BDDMockito.given(mockMapper.map(mockResponse)).willReturn(mockMappedData)
+        given(mockApiInterface.allComics()).willReturn(Single.just(mockResponse))
+        given(mockMapper.map(mockResponse)).willReturn(mockMappedData)
 
         //that test method at the end is funny
         testObserver = subject.fetchComics().test()

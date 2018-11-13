@@ -5,7 +5,6 @@ import retrofit2.http.GET
 
 interface ApiInterface {
 
-    //use Single later
 
     @GET(Endpoints.GET_COMICS)
     fun allComics(): Single<GetComicsResponse>

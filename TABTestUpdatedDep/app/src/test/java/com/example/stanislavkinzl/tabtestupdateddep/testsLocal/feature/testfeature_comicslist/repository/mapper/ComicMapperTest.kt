@@ -4,7 +4,7 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.GetComic
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository.ComicMapper
 import com.example.stanislavkinzl.tabtestupdateddep.testsLocal.fileToGson
-import org.assertj.core.api.Assertions
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.InjectMocks
@@ -29,8 +29,8 @@ class ComicMapperTest {
         logOutputList()
         //then
         assertThatOutputListSizeIs(2)
-        Assertions.assertThat(outputList[0]).isEqualTo(spiderman)
-        Assertions.assertThat(outputList[1]).isEqualTo(batman)
+        assertThat(outputList[0]).isEqualTo(spiderman)
+        assertThat(outputList[1]).isEqualTo(batman)
     }
 
     @Test
@@ -43,7 +43,7 @@ class ComicMapperTest {
         logOutputList()
         //then
         assertThatOutputListSizeIs(1)
-        Assertions.assertThat(outputList[0]).isEqualTo(spiderman_without_name)
+        assertThat(outputList[0]).isEqualTo(spiderman_without_name)
     }
 
     @Test
@@ -75,6 +75,6 @@ class ComicMapperTest {
     }
 
     private fun assertThatOutputListSizeIs(expected: Int) {
-        Assertions.assertThat(outputList.size).isEqualTo(expected)
+        assertThat(outputList.size).isEqualTo(expected)
     }
 }

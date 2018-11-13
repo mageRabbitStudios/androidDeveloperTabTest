@@ -16,7 +16,6 @@ import org.junit.runner.RunWith
 import org.robolectric.annotation.Config
 
 
-@Suppress("DEPRECATION")
 @RunWith(AndroidJUnit4::class)
 @Config(application = TestApp::class)
 class MainActivityTest : ActivityBDDEspressoTest<MainActivity>() {
@@ -40,7 +39,7 @@ class MainActivityTest : ActivityBDDEspressoTest<MainActivity>() {
 
     @Test
     fun emptyResultsAreDisplayed() {
-        Given({ theServerReturnsEmptyResponse() }, !launchFirst)
+        Given({ theServerReturnsEmptyResponse() }, launchFirst = false)
         When { iSeeMainScreen() }
         Then { iSeeEmptyMemes() }
     }

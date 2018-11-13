@@ -117,6 +117,9 @@ dependencies {
 
     kaptTest "com.google.dagger:dagger-compiler:$daggerVersion"
     kaptTest "com.google.dagger:dagger-android-processor:$daggerVersion"
+
+    //Kakao
+    testImplementation 'com.agoda.kakao:kakao:1.4.0-androidx'
 }
 
 repositories {
