@@ -27,11 +27,12 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
-    //===== TEST DEPS =======
+    /////////////////////////////////////////////////////
+    ///           LOCAL TEST LIBRARIES                ///
+    /////////////////////////////////////////////////////
 
     //common
     testImplementation "androidx.test.ext:junit:1.0.0"
-
     testImplementation 'org.mockito:mockito-inline:2.10.0'
     testImplementation 'org.assertj:assertj-core:2.9.0'
     testImplementation 'com.squareup.assertj:assertj-android:1.1.1'
@@ -39,12 +40,14 @@ dependencies {
     testImplementation "org.robolectric:robolectric:4.0.1"
 
     //Dagger and injections
-    testImplementation 'javax.inject:javax.inject:1'
+   /* testImplementation 'javax.inject:javax.inject:1'
     testImplementation "com.google.dagger:dagger:$daggerVersion"
     //noinspection GradleDependency
     testImplementation "com.google.dagger:dagger-android:$daggerVersion"
     //noinspection GradleDependency
     testImplementation "com.google.dagger:dagger-android-support:$daggerVersion"
+*/
+    daggerTest()
 
     /*androidX Test implementations. More packages of AndroidX at https://developer.android.com/training/testing/set-up-project
      Add more AndroidX Test dependencies here if needed*/
