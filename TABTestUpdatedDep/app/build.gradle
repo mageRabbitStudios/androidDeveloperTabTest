@@ -1,13 +1,12 @@
+/*apply from: rootProject.file('common-app.gradle')*/
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
-
-ext {
-    daggerVersion = '2.16'
-}
+apply from: rootProject.file('dependency-groups.gradle')
 
 android {
+
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.stanislavkinzl.tabtestupdateddep"
@@ -41,11 +40,12 @@ androidExtensions {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    dagger()
 
     //=== COMPILERS =====
 
-    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
-    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
+    /*kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"*/
     kapt 'androidx.lifecycle:lifecycle-compiler:2.0.0'
 
     //=== DEPS ==========
@@ -61,10 +61,10 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.1.0-alpha01'
     //dagger
-    implementation "com.google.dagger:dagger:$daggerVersion"
+    /*implementation "com.google.dagger:dagger:$daggerVersion"
     //noinspection GradleDependency
     implementation "com.google.dagger:dagger-android:$daggerVersion"
-    implementation "com.google.dagger:dagger-android-support:$daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$daggerVersion"*/
     //rxjava
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
     implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
