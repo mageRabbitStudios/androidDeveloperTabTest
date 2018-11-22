@@ -18,7 +18,7 @@ ext.deps = [
         dagger          : "com.google.dagger:dagger:$daggerVersion",
         daggerAndroid   : "com.google.dagger:dagger-android:$daggerVersion",
         daggerAndroidSup: "com.google.dagger:dagger-android-support:$daggerVersion"
-        ]
+]
 
 buildscript {
     repositories {
