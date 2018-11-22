@@ -15,6 +15,7 @@ import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
+import com.example.stanislavkinzl.tabtestupdateddep.R
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.RecyclerViewMatcher.Factory.withRecyclerView
 import org.hamcrest.Description
 import org.hamcrest.Matcher
@@ -22,6 +23,12 @@ import org.hamcrest.Matchers
 import org.hamcrest.TypeSafeMatcher
 
 object TestMatchers {
+
+    fun validateRecyclerViewItem(position: Int, stringToBeTestedOnTv: String, resIdOfRecyclerView: Int, resIdOfRowView: Int, resIdOfTextViewBeingAsserted: Int) {
+        iScrollToItemInList(resIdOfRecyclerView, position)
+        thenListItemIsDisplayed(resIdOfRecyclerView, position, resIdOfRowView)
+        thenListItemHasText(resIdOfRecyclerView, position, resIdOfTextViewBeingAsserted, stringToBeTestedOnTv)
+    }
 
     private fun scrollTo(): ViewAction {
         return object : ViewAction {

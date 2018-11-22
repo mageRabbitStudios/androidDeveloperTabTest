@@ -5,7 +5,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.TestApp
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.ActivityBDDEspressoTest
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps.MainActivityTestSteps.iSeeEmptyMemes
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps.MainActivityTestSteps.iSeeEmptyListOfComics
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps.MainActivityTestSteps.iSeeMainScreen
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps.MainActivityTestSteps.iSeeMockMemes
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps.MainActivityTestSteps.theServerReturnsEmptyResponse
@@ -41,6 +41,6 @@ class MainActivityTest : ActivityBDDEspressoTest<MainActivity>() {
     fun emptyResultsAreDisplayed() {
         Given({ theServerReturnsEmptyResponse() }, launchFirst = false)
         When { iSeeMainScreen() }
-        Then { iSeeEmptyMemes() }
+        Then { iSeeEmptyListOfComics() }
     }
 }
