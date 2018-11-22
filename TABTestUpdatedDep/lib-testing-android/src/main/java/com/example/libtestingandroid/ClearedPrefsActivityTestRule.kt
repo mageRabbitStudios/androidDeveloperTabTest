@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers
+package com.example.libtestingandroid
 
 import android.app.Activity
 import android.content.Intent

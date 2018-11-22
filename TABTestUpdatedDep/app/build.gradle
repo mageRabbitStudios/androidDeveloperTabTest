@@ -33,7 +33,7 @@ dependencies {
 
     localTestDependencies()
     daggerLocalTestDependencies()
-    testImplementation project(':lib-testing')
+    testImplementation project(':lib-testing-android')
 
     //TODO: Kakao is used only in one example class. Remove this artifact later?
     testImplementation 'com.agoda.kakao:kakao:1.4.0-androidx'

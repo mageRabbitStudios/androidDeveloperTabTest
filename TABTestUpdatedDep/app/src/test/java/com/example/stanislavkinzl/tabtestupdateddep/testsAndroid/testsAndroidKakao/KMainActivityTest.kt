@@ -2,10 +2,10 @@ package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.testsAndroidKa
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
+import com.example.libtestingandroid.ActivityBDDEspressoTest
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.TestApp
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.ActivityBDDEspressoTest
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.MockSettings.EndpointJsons.GET_COMICS_EMPTY
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.MockSettings.updateEndpointValue
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.testsAndroidKakao.screens.KMainActivityTestScreen
