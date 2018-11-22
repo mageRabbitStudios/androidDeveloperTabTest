@@ -9,6 +9,7 @@ import com.example.stanislavkinzl.tabtestupdateddep.app.base.BaseActivity
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.viewmodel.ComicsViewModel
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_comicslist.ComicsListWidget
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_marveltoolbar.ToolbarWidget
+import com.kinzlstanislav.libtesting.MyClass
 import javax.inject.Inject
 
 class MainActivity : BaseActivity() {
@@ -23,6 +24,8 @@ class MainActivity : BaseActivity() {
 
     @Inject
     lateinit var toolbarWidget: ToolbarWidget
+
+    val myClass = MyClass()
 
     //=============================================
 
@@ -50,11 +53,11 @@ class MainActivity : BaseActivity() {
         ->
             for (comic in state.comics) {
                 comicsListWidget.addResults(state.comics)
-                Toast.makeText(this, "Success loading comics", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Success loading comics ${myClass.gogo}", Toast.LENGTH_LONG).show()
                 System.out.println(comic.toString())
             }
         is ComicsViewModel.State.FetchMemesError -> {
-            Toast.makeText(this, "Error loading comics", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Error loading comics ${myClass.gogo}", Toast.LENGTH_LONG).show()
             System.out.println("Error")
         }
     }

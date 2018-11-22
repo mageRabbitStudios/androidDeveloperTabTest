@@ -120,6 +120,8 @@ dependencies {
 
     //Kakao
     testImplementation 'com.agoda.kakao:kakao:1.4.0-androidx'
+
+    implementation project(':lib-testing')
 }
 
 repositories {
