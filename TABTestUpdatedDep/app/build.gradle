@@ -31,38 +31,13 @@ dependencies {
     ///           LOCAL TEST LIBRARIES                ///
     /////////////////////////////////////////////////////
 
-    //common
-    testImplementation "androidx.test.ext:junit:1.0.0"
-    testImplementation 'org.mockito:mockito-inline:2.10.0'
-    testImplementation 'org.assertj:assertj-core:2.9.0'
-    testImplementation 'com.squareup.assertj:assertj-android:1.1.1'
-    testImplementation 'androidx.arch.core:core-testing:2.0.0'
-    testImplementation "org.robolectric:robolectric:4.0.1"
+    localTestDependencies()
+    daggerLocalTestDependencies()
+    testImplementation project(':lib-testing')
 
-    //Dagger and injections
-   /* testImplementation 'javax.inject:javax.inject:1'
-    testImplementation "com.google.dagger:dagger:$daggerVersion"
-    //noinspection GradleDependency
-    testImplementation "com.google.dagger:dagger-android:$daggerVersion"
-    //noinspection GradleDependency
-    testImplementation "com.google.dagger:dagger-android-support:$daggerVersion"
-*/
-    daggerTest()
-
-    /*androidX Test implementations. More packages of AndroidX at https://developer.android.com/training/testing/set-up-project
-     Add more AndroidX Test dependencies here if needed*/
-    /*AndroidX*/testImplementation 'androidx.test:rules:1.1.0'
-    /*AndroidX*/testImplementation 'androidx.test:runner:1.1.0'
-    /*AndroidX*/testImplementation 'androidx.test.espresso:espresso-core:3.1.0'
-    /*AndroidX*/testImplementation 'androidx.test.espresso:espresso-contrib:3.1.0'
-
-    kaptTest "com.google.dagger:dagger-compiler:$daggerVersion"
-    kaptTest "com.google.dagger:dagger-android-processor:$daggerVersion"
-
-    //Kakao
+    //TODO: Kakao is used only in one example class. Remove this artifact later?
     testImplementation 'com.agoda.kakao:kakao:1.4.0-androidx'
 
-    implementation project(':lib-testing')
 }
 
 

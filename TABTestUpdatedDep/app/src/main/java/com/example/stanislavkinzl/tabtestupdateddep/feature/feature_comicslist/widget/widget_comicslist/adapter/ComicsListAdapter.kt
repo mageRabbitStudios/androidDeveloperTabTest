@@ -31,7 +31,10 @@ class ComicsListAdapter(
     }
 
     internal fun addResults(results: List<Comic>) {
-        comicsList.addAll(results)
+        with(comicsList) {
+            clear()
+            addAll(results)
+        }
         notifyDataSetChanged()
     }
 }

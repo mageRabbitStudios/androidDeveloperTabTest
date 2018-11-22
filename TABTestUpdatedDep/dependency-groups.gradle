@@ -40,10 +40,26 @@ ext.rxJava = group {
     implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
 }
 
-ext.daggerTest = group {
+ext.daggerLocalTestDependencies = group {
+    kaptTest "com.google.dagger:dagger-compiler:$daggerVersion"
+    kaptTest "com.google.dagger:dagger-android-processor:$daggerVersion"
     testImplementation 'javax.inject:javax.inject:1'
     testImplementation "com.google.dagger:dagger:$daggerVersion"
     testImplementation "com.google.dagger:dagger-android:$daggerVersion"
     testImplementation "com.google.dagger:dagger-android-support:$daggerVersion"
+}
+
+ext.localTestDependencies = group {
+    testImplementation 'org.mockito:mockito-inline:2.10.0'
+    testImplementation 'org.assertj:assertj-core:2.9.0'
+    testImplementation 'com.squareup.assertj:assertj-android:1.1.1'
+    testImplementation "org.robolectric:robolectric:4.0.1"
+
+    /*AndroidX*/testImplementation "androidx.test.ext:junit:1.0.0"
+    /*AndroidX*/testImplementation 'androidx.arch.core:core-testing:2.0.0'
+    /*AndroidX*/testImplementation 'androidx.test:rules:1.1.0'
+    /*AndroidX*/testImplementation 'androidx.test:runner:1.1.0'
+    /*AndroidX*/testImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    /*AndroidX*/testImplementation 'androidx.test.espresso:espresso-contrib:3.1.0'
 }
 
