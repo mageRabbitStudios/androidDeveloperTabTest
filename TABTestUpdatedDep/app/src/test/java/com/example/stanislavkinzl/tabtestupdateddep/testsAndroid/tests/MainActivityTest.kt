@@ -4,10 +4,10 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.libtestingandroid.RobolectricEspressoTest
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.TestApp
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps.MainActivityTestSteps.iSeeEmptyListOfComics
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps.MainActivityTestSteps.iSeeMainScreen
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps.MainActivityTestSteps.iSeeMockMemes
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps.MainActivityTestSteps.theServerReturnsEmptyResponse
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.tests.steps.MainActivityTestSteps.iSeeEmptyListOfComics
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.tests.steps.MainActivityTestSteps.iSeeMainScreen
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.tests.steps.MainActivityTestSteps.iSeeMockMemes
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.tests.steps.MainActivityTestSteps.theServerReturnsEmptyResponse
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.annotation.Config

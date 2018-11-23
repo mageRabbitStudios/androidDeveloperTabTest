@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers
+package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid
 
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface
 import java.net.HttpURLConnection
@@ -11,7 +11,8 @@ object MockSettings {
     }
 
     object EndpointValues {
-        var GET_COMICS = EndpointJsons.GET_COMICS_FULL
+        var GET_COMICS =
+            EndpointJsons.GET_COMICS_FULL
     }
 
     object EndpointStatus {
@@ -19,7 +20,10 @@ object MockSettings {
     }
 
     fun getEndpointResponse(name: String): Pair<Int, String> = when (name) {
-        ApiInterface.Endpoints.GET_COMICS -> Pair(EndpointStatus.GET_COMICS, EndpointValues.GET_COMICS)
+        ApiInterface.Endpoints.GET_COMICS -> Pair(
+            EndpointStatus.GET_COMICS,
+            EndpointValues.GET_COMICS
+        )
         else -> Pair(500, "")
     }
 

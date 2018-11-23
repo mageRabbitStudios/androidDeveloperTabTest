@@ -1,6 +1,6 @@
 package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.injection.objects
 
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.MockSettings
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.MockSettings
 import okhttp3.*
 import java.util.*
 

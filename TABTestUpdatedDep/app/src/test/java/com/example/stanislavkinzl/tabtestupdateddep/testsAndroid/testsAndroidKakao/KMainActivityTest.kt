@@ -1,13 +1,12 @@
 package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.testsAndroidKakao
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.libtestingandroid.EspressoTest
 import com.example.libtestingandroid.RobolectricEspressoTest
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.MockSettings.EndpointJsons.GET_COMICS_EMPTY
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.MockSettings.updateEndpointValue
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.TestApp
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.MockSettings.EndpointJsons.GET_COMICS_EMPTY
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.MockSettings.updateEndpointValue
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.testsAndroidKakao.screens.KMainActivityTestScreen
 import org.junit.Test
 import org.junit.runner.RunWith

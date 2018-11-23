@@ -1,9 +1,9 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.steps
+package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.tests.steps
 
 import com.example.stanislavkinzl.tabtestupdateddep.R
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface.Endpoints.GET_COMICS
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.MockSettings.EndpointJsons.GET_COMICS_EMPTY
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.MockSettings.updateEndpointValue
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.MockSettings.EndpointJsons.GET_COMICS_EMPTY
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.MockSettings.updateEndpointValue
 import com.example.libtestingandroid.helpers.TestMatchers.thenIsDisplayed
 import com.example.libtestingandroid.helpers.TestMatchers.thenListIsEmpty
 import com.example.libtestingandroid.helpers.TestMatchers.validateRecyclerViewItem
