@@ -10,7 +10,7 @@ import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.v
 import org.junit.Test
 import org.junit.runner.RunWith
 
-
+//TODO: Make this work
 @RunWith(AndroidJUnit4::class)
 class MainActivityTest : EspressoTest(MainActivity()) {
 

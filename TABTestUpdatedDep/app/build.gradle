@@ -1,11 +1,13 @@
 apply from: rootProject.file('common-app.gradle')
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     defaultConfig {
         multiDexEnabled true
         applicationId "com.example.stanislavkinzl.tabtestupdateddep"
         testInstrumentationRunner "com.example.stanislavkinzl.tabtestupdateddep.AEspressoTestRunner"
-       // testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 }
 
@@ -16,6 +18,8 @@ dependencies {
     ///              RELEASE LIBRARIES                ///
     /////////////////////////////////////////////////////
 
+    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'com.google.android.material:material:1.0.0-alpha1'
     kotlin()
     picasso()
     androidAndGoogle()
@@ -48,5 +52,3 @@ dependencies {
     //TODO: Kakao is used only in one example class. Remove this artifact later?
     testImplementation 'com.agoda.kakao:kakao:1.4.0-androidx'
 }
-
-
