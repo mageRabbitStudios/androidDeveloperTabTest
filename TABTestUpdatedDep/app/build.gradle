@@ -4,6 +4,8 @@ android {
     defaultConfig {
         multiDexEnabled true
         applicationId "com.example.stanislavkinzl.tabtestupdateddep"
+        testInstrumentationRunner "com.example.stanislavkinzl.tabtestupdateddep.AEspressoTestRunner"
+       // testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 }
 
@@ -35,9 +37,16 @@ dependencies {
     daggerLocalTestDependencies()
     testImplementation project(':lib-testing-android')
 
+    /////////////////////////////////////////////////////
+    ///        INSTRUMENTATION TEST LIBRARIES         ///
+    /////////////////////////////////////////////////////
+
+    androidTestDependencies()
+    daggerAndroidTestDependencies()
+    androidTestImplementation project(':lib-testing-android')
+
     //TODO: Kakao is used only in one example class. Remove this artifact later?
     testImplementation 'com.agoda.kakao:kakao:1.4.0-androidx'
-
 }
 
 

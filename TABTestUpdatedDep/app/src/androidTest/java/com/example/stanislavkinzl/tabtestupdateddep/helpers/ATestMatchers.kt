@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers
+package com.example.stanislavkinzl.tabtestupdateddep.helpers
 
 import android.view.View
 import android.widget.FrameLayout
@@ -15,13 +15,13 @@ import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.RecyclerViewMatcher.Factory.withRecyclerView
+import com.example.stanislavkinzl.tabtestupdateddep.helpers.ARecyclerViewMatcher.Factory.withRecyclerView
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers
 import org.hamcrest.TypeSafeMatcher
 
-object TestMatchers {
+object ATestMatchers {
 
     fun validateRecyclerViewItem(position: Int, stringToBeTestedOnTv: String, resIdOfRecyclerView: Int, resIdOfRowView: Int, resIdOfTextViewBeingAsserted: Int) {
         iScrollToItemInList(resIdOfRecyclerView, position)
