@@ -13,8 +13,6 @@ abstract class EspressoTest (activity: Activity) : BDDEspressoTest() {
     @CallSuper
     @Before
     open fun setup() {
-       // InstrumentationRegistry.getTargetContext().applicationContext as TestApp
-        //  val app = InstrumentationRegistry.getTargetContext().applicationContext as TestApp
     }
 
     @JvmField

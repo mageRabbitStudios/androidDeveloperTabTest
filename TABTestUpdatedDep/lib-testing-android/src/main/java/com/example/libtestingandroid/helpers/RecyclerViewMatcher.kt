@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers
+package com.example.libtestingandroid.helpers
 
 import android.content.res.Resources
 import android.view.View
@@ -10,7 +10,8 @@ import org.hamcrest.TypeSafeMatcher
 class RecyclerViewMatcher(private val recyclerViewId: Int) {
 
     companion object Factory {
-        fun withRecyclerView(recyclerViewId: Int) = RecyclerViewMatcher(recyclerViewId)
+        fun withRecyclerView(recyclerViewId: Int) =
+            RecyclerViewMatcher(recyclerViewId)
     }
 
     fun atPosition(position: Int): Matcher<View> = atPositionOnView(position, -1)

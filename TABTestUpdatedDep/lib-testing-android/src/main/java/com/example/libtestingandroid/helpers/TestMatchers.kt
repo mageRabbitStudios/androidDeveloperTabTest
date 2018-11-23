@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers
+package com.example.libtestingandroid.helpers
 
 import android.view.View
 import android.widget.FrameLayout
@@ -15,7 +15,7 @@ import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.helpers.RecyclerViewMatcher.Factory.withRecyclerView
+import com.example.libtestingandroid.helpers.RecyclerViewMatcher.Factory.withRecyclerView
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers
@@ -25,8 +25,17 @@ object TestMatchers {
 
     fun validateRecyclerViewItem(position: Int, stringToBeTestedOnTv: String, resIdOfRecyclerView: Int, resIdOfRowView: Int, resIdOfTextViewBeingAsserted: Int) {
         iScrollToItemInList(resIdOfRecyclerView, position)
-        thenListItemIsDisplayed(resIdOfRecyclerView, position, resIdOfRowView)
-        thenListItemHasText(resIdOfRecyclerView, position, resIdOfTextViewBeingAsserted, stringToBeTestedOnTv)
+        thenListItemIsDisplayed(
+            resIdOfRecyclerView,
+            position,
+            resIdOfRowView
+        )
+        thenListItemHasText(
+            resIdOfRecyclerView,
+            position,
+            resIdOfTextViewBeingAsserted,
+            stringToBeTestedOnTv
+        )
     }
 
     private fun scrollTo(): ViewAction {
@@ -91,7 +100,11 @@ object TestMatchers {
     }
 
     fun thenListHasTotalItems(recyclerViewId: Int, expectedTotalItems: Int) {
-        onView(ViewMatchers.withId(recyclerViewId)).check(matches(withTotalItems(expectedTotalItems)))
+        onView(ViewMatchers.withId(recyclerViewId)).check(matches(
+            withTotalItems(
+                expectedTotalItems
+            )
+        ))
     }
 
     fun thenListItemIsDisplayed(recyclerViewId: Int, position: Int, childViewId: Int) {
