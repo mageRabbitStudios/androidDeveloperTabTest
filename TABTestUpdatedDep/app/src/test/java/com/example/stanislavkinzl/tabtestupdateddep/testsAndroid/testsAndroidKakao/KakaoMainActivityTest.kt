@@ -1,6 +1,5 @@
 package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.testsAndroidKakao
 
-import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.libtestingandroid.RobolectricEspressoTest
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity
@@ -9,17 +8,17 @@ import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.MockSettings.up
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.TestApp
 import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.testsAndroidKakao.screens.KMainActivityTestScreen
 import org.junit.Test
-import org.junit.runner.RunWith
 import org.robolectric.annotation.Config
 
-@RunWith(AndroidJUnit4::class)
 @Config(application = TestApp::class)
-class MainActivityTest : RobolectricEspressoTest(MainActivity()) {
+class KakaoMainActivityTest : RobolectricEspressoTest(MainActivity::class.java) {
 
     val screen = KMainActivityTestScreen()
 
     @Test
     fun testMainScreenDisplayedCorrectly() {
+        given ({}, launchFirst = true)
+
         screen {
             content {
                 isVisible()
@@ -30,6 +29,8 @@ class MainActivityTest : RobolectricEspressoTest(MainActivity()) {
 
     @Test
     fun resultsAreDisplayed() {
+        given ({}, launchFirst = true)
+
         screen {
             recycler_view {
                 isVisible()
@@ -48,7 +49,7 @@ class MainActivityTest : RobolectricEspressoTest(MainActivity()) {
 
     @Test
     fun emptyResultsAreDisplayed() {
-        Given ({updateEndpointValue(ApiInterface.Endpoints.GET_COMICS, GET_COMICS_EMPTY)}, launchFirst = false)
+        given ({updateEndpointValue(ApiInterface.Endpoints.GET_COMICS, GET_COMICS_EMPTY)}, launchFirst = false)
 
         screen {
             content  {
@@ -63,6 +64,8 @@ class MainActivityTest : RobolectricEspressoTest(MainActivity()) {
 
     @Test
     fun firstItemGetsClicked() {
+        given ({}, launchFirst = true)
+
         screen {
             content { isVisible() }
             recycler_view {

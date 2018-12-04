@@ -10,6 +10,7 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.UiController
 import androidx.test.espresso.ViewAction
 import androidx.test.espresso.action.ScrollToAction
+import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers
@@ -115,10 +116,25 @@ object TestMatchers {
     }
 
     fun thenListItemHasText(recyclerViewId: Int, position: Int, childViewId: Int, text: String) {
-        onView(
-            withRecyclerView(recyclerViewId)
-                .atPositionOnView(position, childViewId)
-        )
-            .check(matches(ViewMatchers.withText(text)))
+        iSee(childViewId)
+//        onView(
+//            withRecyclerView(recyclerViewId)
+//                .atPositionOnView(position, childViewId)
+//        )
+//            .check(matches(ViewMatchers.withText(text)))
     }
+
+    fun iSee(id: Int) {
+        onView(withId(id)).check(
+            ViewAssertions.matches(
+            ViewMatchers.withEffectiveVisibility(
+                ViewMatchers.Visibility.VISIBLE)))
+    }
+
+    fun iSee(ids: ArrayList<Int>) {
+        for(id in ids) {
+            iSee(id)
+        }
+    }
+
 }

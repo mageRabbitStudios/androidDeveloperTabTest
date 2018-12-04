@@ -2,19 +2,19 @@ package com.example.libtestingandroid
 
 abstract class BDDEspressoTest {
 
-    fun Given(step: () -> Unit) {
+    fun given(step: () -> Unit) {
         step()
     }
 
-    fun When(step: () -> Unit) {
+    fun `when`(step: () -> Unit) {
         step()
     }
 
-    fun Then(step: () -> Unit) {
+    fun then(step: () -> Unit) {
         step()
     }
 
-    fun And(step: () -> Unit) {
+    fun and(step: () -> Unit) {
         step()
     }
 }

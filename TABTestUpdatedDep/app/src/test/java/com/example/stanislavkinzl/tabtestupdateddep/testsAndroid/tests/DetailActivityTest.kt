@@ -12,10 +12,12 @@ import org.robolectric.annotation.Config
 
 @RunWith(AndroidJUnit4::class)
 @Config(application = TestApp::class)
-class DetailActivityTest : RobolectricEspressoTest(DetailActivity()) {
+class DetailActivityTest : RobolectricEspressoTest(DetailActivity::class.java) {
 
     @Test
     fun testDetailScreenDisplayedCorrectly() {
+        given ({}, launchFirst = true)
+
         TestMatchers.thenIsDisplayed(R.id.activity_detail_content)
     }
 

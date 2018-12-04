@@ -15,23 +15,24 @@ import org.robolectric.annotation.Config
 
 @RunWith(AndroidJUnit4::class)
 @Config(application = TestApp::class)
-class MainActivityTest : RobolectricEspressoTest(MainActivity()) {
+class MainActivityTest : RobolectricEspressoTest(MainActivity::class.java) {
 
     @Test
     fun testMainScreenDisplayedCorrectly() {
-        Given { iSeeMainScreen() }
+        given ({ iSeeMainScreen() }, launchFirst = true)
     }
 
     @Test
     fun resultsAreDisplayed() {
-        Given { iSeeMainScreen() }
-        Then  { iSeeMockMemes() }
+        given ({ iSeeMainScreen()}, launchFirst = true)
+        printViewHiearchy()
+        then   { iSeeMockMemes() }
     }
 
     @Test
     fun emptyResultsAreDisplayed() {
-        Given({ theServerReturnsEmptyResponse() }, launchFirst = false)
-        When { iSeeMainScreen() }
-        Then { iSeeEmptyListOfComics() }
+        given({ theServerReturnsEmptyResponse() }, launchFirst = false)
+        `when` { iSeeMainScreen() }
+        then   { iSeeEmptyListOfComics() }
     }
 }
