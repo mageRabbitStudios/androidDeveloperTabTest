@@ -1,11 +1,10 @@
-package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.dependencyinjection
+package com.example.stanislavkinzl.tabtestupdateddep.feature
 
 import androidx.lifecycle.ViewModelProviders
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.domain.FetchComicsUseCase
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.domain.FetchComicsUseCaseImpl
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository.ComicRepository
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.repository.ComicRepositoryImpl
-import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.viewmodel.ComicsViewModel
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.viewmodel.ComicsViewModelFactory
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_comicslist.injection.ComicsListWidgetModule
@@ -19,14 +18,14 @@ import dagger.Provides
         ToolbarWidgetModule::class
     ]
 )
-class ComicListModule {
+class ComicListFragmentModule {
 
     @Provides
     fun provideComicsViewModel(
-        mainActivity: MainActivity,
+        fragment: ExampleComicListFragment,
         memeViewModelFactory: ComicsViewModelFactory
     ): ComicsViewModel =
-        ViewModelProviders.of(mainActivity, memeViewModelFactory).get(ComicsViewModel::class.java)
+        ViewModelProviders.of(fragment, memeViewModelFactory).get(ComicsViewModel::class.java)
 
 
     @Provides
@@ -36,4 +35,6 @@ class ComicListModule {
     @Provides
     fun provideComicsUseCase(fetchComicsUseCase: FetchComicsUseCaseImpl): FetchComicsUseCase =
         fetchComicsUseCase
+
+
 }

@@ -1,7 +1,7 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.injection.modules
+package com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.injection.modules
 
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.injection.objects.OkHttpMockInterceptor
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.injection.objects.OkHttpMockInterceptor
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

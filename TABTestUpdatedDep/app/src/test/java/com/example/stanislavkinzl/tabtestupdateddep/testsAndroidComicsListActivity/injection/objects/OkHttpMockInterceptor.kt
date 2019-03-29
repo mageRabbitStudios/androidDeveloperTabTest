@@ -1,6 +1,6 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.injection.objects
+package com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.injection.objects
 
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.MockSettings
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.MockSettings
 import okhttp3.*
 import java.util.*
 

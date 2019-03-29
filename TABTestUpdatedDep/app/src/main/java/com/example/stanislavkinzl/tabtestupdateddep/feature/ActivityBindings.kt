@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.app.dependencyinjection
+package com.example.stanislavkinzl.tabtestupdateddep.feature
 
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.dependencyinjection.ComicListModule
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity

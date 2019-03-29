@@ -3,6 +3,7 @@ package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.domain.FetchComicsUseCase
+import io.reactivex.Single
 
 class ComicsViewModelImpl constructor(
     private val fetchComicsUseCase: FetchComicsUseCase
@@ -32,6 +33,8 @@ class ComicsViewModelImpl constructor(
 
     //view model
     override fun state(): LiveData<State> = state
+
+    val tss: Single<String> = Single.just("tss")
 
     override fun getComicsApiList() {
         fetchComicsUseCase.execute()

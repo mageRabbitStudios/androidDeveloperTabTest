@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.testsAndroidKakao.screens
+package com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.testsAndroidKakao.screens
 
 import android.view.View
 import com.agoda.kakao.*

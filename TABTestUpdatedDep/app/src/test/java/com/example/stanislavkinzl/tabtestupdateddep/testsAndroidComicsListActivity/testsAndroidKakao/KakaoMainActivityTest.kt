@@ -1,17 +1,17 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.testsAndroidKakao
+package com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.testsAndroidKakao
 
-import com.example.libtestingandroid.RobolectricEspressoTest
+import com.example.libtestingandroid.parents.ActivityWithTestComponentTest
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view.MainActivity
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.MockSettings.EndpointJsons.GET_COMICS_EMPTY
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.MockSettings.updateEndpointValue
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.TestApp
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.testsAndroidKakao.screens.KMainActivityTestScreen
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.MockSettings.EndpointJsons.GET_COMICS_EMPTY
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.MockSettings.updateEndpointValue
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.TestApp
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.testsAndroidKakao.screens.KMainActivityTestScreen
 import org.junit.Test
 import org.robolectric.annotation.Config
 
 @Config(application = TestApp::class)
-class KakaoMainActivityTest : RobolectricEspressoTest(MainActivity::class.java) {
+class KakaoMainActivityTest : ActivityWithTestComponentTest(MainActivity::class.java) {
 
     val screen = KMainActivityTestScreen()
 

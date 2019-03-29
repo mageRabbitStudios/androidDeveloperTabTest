@@ -1,4 +1,4 @@
-package com.example.libtestingandroid
+package com.example.libtestingandroid.parents
 
 
 import android.app.Activity
@@ -9,7 +9,8 @@ import androidx.annotation.*
 import androidx.test.espresso.intent.Intents
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
-import androidx.test.runner.AndroidJUnit4
+import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.libtestingandroid.BDDEspressoTest
 import com.example.libtestingandroid.helpers.RobolectricHelper
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.After
@@ -18,9 +19,8 @@ import org.junit.Rule
 import org.junit.runner.RunWith
 
 /**This class is a parent class for all Robolectric 4.0+ tests. It was created in November 2018*/
-@Suppress("DEPRECATION")
 @RunWith(AndroidJUnit4::class)
-abstract class RobolectricEspressoTest(givenActivity: Class<out Activity>) : BDDEspressoTest() {
+abstract class ActivityWithTestComponentTest(givenActivity: Class<out Activity>) : BDDEspressoTest() {
 
     @get:Rule
     val activityRule = ActivityTestRule(givenActivity, false, false)
@@ -55,7 +55,7 @@ abstract class RobolectricEspressoTest(givenActivity: Class<out Activity>) : BDD
     }
 
     /**Call this method in every test execution when you wan't the activity to start*/
-    protected fun given(step: () -> Unit, launchFirst: Boolean = true) {
+    protected fun given(step: () -> Unit = {}, launchFirst: Boolean = true) {
         if (launchFirst) {
             activityRule.launchActivity(Intent())
         }

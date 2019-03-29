@@ -1,4 +1,4 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid
+package com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity
 
 import com.example.stanislavkinzl.tabtestupdateddep.app.database.remote.ApiInterface
 import java.net.HttpURLConnection

@@ -1,8 +1,10 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.injection
+package com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.injection
 
 import android.app.Application
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.TestApp
-import com.example.stanislavkinzl.tabtestupdateddep.app.dependencyinjection.ActivityBindings
+import com.example.stanislavkinzl.tabtestupdateddep.feature.ActivityBindings
+import com.example.stanislavkinzl.tabtestupdateddep.feature.FragmentBindings
+import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.dependencyinjection.ComicListModule
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.TestApp
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -15,7 +17,8 @@ import javax.inject.Singleton
     modules = [
         AndroidSupportInjectionModule::class,
         TestAppModule::class,
-        ActivityBindings::class
+        ActivityBindings::class,
+        FragmentBindings::class
     ]
 )
 interface TestAppComponent : AndroidInjector<DaggerApplication> {

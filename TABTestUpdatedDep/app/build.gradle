@@ -8,6 +8,9 @@ android {
         applicationId "com.example.stanislavkinzl.tabtestupdateddep"
         testInstrumentationRunner "com.example.stanislavkinzl.tabtestupdateddep.AEspressoTestRunner"
         // testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testOptions {
+            unitTests.returnDefaultValues = true
+        }
     }
 }
 
@@ -44,10 +47,12 @@ dependencies {
     /////////////////////////////////////////////////////
     ///        INSTRUMENTATION TEST LIBRARIES         ///
     /////////////////////////////////////////////////////
+    testImplementation 'org.robolectric:robolectric:4.0'
 
     androidTestDependencies()
     daggerAndroidTestDependencies()
     androidTestImplementation project(':lib-testing-android')
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
 
     //TODO: Kakao is used only in one example class. Remove this artifact later?
     testImplementation 'com.agoda.kakao:kakao:1.4.0-androidx'

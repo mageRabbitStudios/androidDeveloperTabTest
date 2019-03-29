@@ -1,9 +1,9 @@
-package com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.injection
+package com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.injection
 
 import android.app.Application
 import android.content.Context
 import com.example.stanislavkinzl.tabtestupdateddep.app.*
-import com.example.stanislavkinzl.tabtestupdateddep.testsAndroid.injection.modules.MockNetworkModule
+import com.example.stanislavkinzl.tabtestupdateddep.testsAndroidComicsListActivity.injection.modules.MockNetworkModule
 import dagger.Module
 import dagger.Provides
 

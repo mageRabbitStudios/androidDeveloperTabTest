@@ -1,13 +1,11 @@
 package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.view
 
-import android.content.Intent
-import androidx.lifecycle.Observer
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.lifecycle.Observer
 import com.example.stanislavkinzl.tabtestupdateddep.R
 import com.example.stanislavkinzl.tabtestupdateddep.app.base.BaseActivity
-import com.example.stanislavkinzl.tabtestupdateddep.feature.DetailActivity
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.viewmodel.ComicsViewModel
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_comicslist.ComicsListWidget
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_marveltoolbar.ToolbarWidget
@@ -33,10 +31,6 @@ class MainActivity : BaseActivity() {
     override fun initWidgets(view: View) {
         comicsListWidget.init(view)
         toolbarWidget.init(view)
-        view.setOnClickListener {
-            val intent = Intent(view.context, DetailActivity::class.java)
-            view.context.startActivity(intent)
-        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,13 +39,13 @@ class MainActivity : BaseActivity() {
         toolbarWidget.setToolbar(this)
     }
 
-    override fun provideViewModel() {
+    override fun observeOnViewModels() {
         comicsViewModel.state().observe(this, Observer {
-            it?.let { onComicsViewModelStateChange(it) }
+            it?.let { stateChange(it) }
         })
     }
 
-    private fun onComicsViewModelStateChange(state: ComicsViewModel.State) = when (state) {
+    private fun stateChange(state: ComicsViewModel.State) = when (state) {
         is ComicsViewModel.State.FetchMemesSuccess
         -> {
             comicsListWidget.addResults(state.comics)

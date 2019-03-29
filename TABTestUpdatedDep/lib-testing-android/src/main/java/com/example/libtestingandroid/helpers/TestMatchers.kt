@@ -24,7 +24,13 @@ import org.hamcrest.TypeSafeMatcher
 
 object TestMatchers {
 
-    fun validateRecyclerViewItem(position: Int, stringToBeTestedOnTv: String, resIdOfRecyclerView: Int, resIdOfRowView: Int, resIdOfTextViewBeingAsserted: Int) {
+    fun validateRecyclerViewItem(
+        position: Int,
+        stringToBeTestedOnTv: String,
+        resIdOfRecyclerView: Int,
+        resIdOfRowView: Int,
+        resIdOfTextViewBeingAsserted: Int
+    ) {
         iScrollToItemInList(resIdOfRecyclerView, position)
         thenListItemIsDisplayed(
             resIdOfRecyclerView,
@@ -101,16 +107,20 @@ object TestMatchers {
     }
 
     fun thenListHasTotalItems(recyclerViewId: Int, expectedTotalItems: Int) {
-        onView(ViewMatchers.withId(recyclerViewId)).check(matches(
-            withTotalItems(
-                expectedTotalItems
+        onView(ViewMatchers.withId(recyclerViewId)).check(
+            matches(
+                withTotalItems(
+                    expectedTotalItems
+                )
             )
-        ))
+        )
     }
 
     fun thenListItemIsDisplayed(recyclerViewId: Int, position: Int, childViewId: Int) {
-        onView(withRecyclerView(recyclerViewId)
-                .atPositionOnView(position, childViewId))
+        onView(
+            withRecyclerView(recyclerViewId)
+                .atPositionOnView(position, childViewId)
+        )
             .perform(scrollTo())
             .check(matches(isDisplayed()))
     }
@@ -127,12 +137,27 @@ object TestMatchers {
     fun iSee(id: Int) {
         onView(withId(id)).check(
             ViewAssertions.matches(
-            ViewMatchers.withEffectiveVisibility(
-                ViewMatchers.Visibility.VISIBLE)))
+                ViewMatchers.withEffectiveVisibility(
+                    ViewMatchers.Visibility.VISIBLE
+                )
+            )
+        )
+    }
+
+    fun iDontSee(id: Int) {
+        onView(withId(id)).check(
+            ViewAssertions.matches(
+                Matchers.not(
+                    ViewMatchers.withEffectiveVisibility(
+                        ViewMatchers.Visibility.VISIBLE
+                    )
+                )
+            )
+        )
     }
 
     fun iSee(ids: ArrayList<Int>) {
-        for(id in ids) {
+        for (id in ids) {
             iSee(id)
         }
     }

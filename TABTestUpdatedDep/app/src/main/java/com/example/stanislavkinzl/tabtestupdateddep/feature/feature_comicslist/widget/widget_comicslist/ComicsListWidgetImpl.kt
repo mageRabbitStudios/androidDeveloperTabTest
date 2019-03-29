@@ -1,10 +1,8 @@
 package com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_comicslist
 
-import android.content.Intent
 import androidx.recyclerview.widget.GridLayoutManager
 import android.view.View
 import com.example.stanislavkinzl.tabtestupdateddep.app.model.Comic
-import com.example.stanislavkinzl.tabtestupdateddep.feature.DetailActivity
 import com.example.stanislavkinzl.tabtestupdateddep.feature.feature_comicslist.widget.widget_comicslist.adapter.ComicsListAdapter
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.widget_comics_list.*
